@@ -31,7 +31,7 @@ jobs:
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-      - name: Run Bot
+      - name: Run Bot with Auto-Retry
         env:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
           OWNER_ID: ${{ secrets.OWNER_ID }}
@@ -40,7 +40,7 @@ jobs:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           PYTHONPATH: .
           HTTPX_TIMEOUT: "60.0"
-        run: python -m bot
+        run: python run.py
 
       - name: Auto-restart Next Workflow Run
         if: always()
