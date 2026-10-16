@@ -1,0 +1,103 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Novabot / Neko Personality Preset Schema v2.4",
+  "description": "Production-ready multi-personality definition format compatible with the existing personality layer (custom_instructions.py, SkinLoader, PersonalityConfig).",
+  "type": "object",
+  "required": ["id", "name", "keywords", "sarcasm_level", "metaphor_frequency", "deadpan", "deadpan_safe", "persona_context"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique snake_case identifier"
+    },
+    "name": {
+      "type": "string",
+      "description": "Human-readable display name"
+    },
+    "description": {
+      "type": "string",
+      "description": "Short summary for UI / docs"
+    },
+    "keywords": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Trigger keywords for automatic activation / matching"
+    },
+    "sarcasm_level": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0
+    },
+    "metaphor_frequency": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0
+    },
+    "exaggeration_level": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.5
+    },
+    "deadpan": {
+      "type": "boolean"
+    },
+    "deadpan_safe": {
+      "type": "boolean",
+      "description": "If true, deadpan filter will not strip emotional markers"
+    },
+    "programmer_humor": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.3
+    },
+    "anime_references": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.2
+    },
+    "max_response_length": {
+      "type": "integer",
+      "default": 400
+    },
+    "persona_context": {
+      "type": "string",
+      "description": "System-prompt style instruction injected into the rewrite / LLM pipeline"
+    },
+    "themed_openers": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "themed_closers": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "themed_prefixes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "emoji_pool": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Preferred emoji for this personality"
+    },
+    "metaphor_pools": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "items": { "type": "string" }
+      },
+      "description": "Domain-specific metaphor banks (programming, life, anime, etc.)"
+    },
+    "response_style_notes": {
+      "type": "string",
+      "description": "Extra guidance for generators / few-shot"
+    },
+    "example_responses": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "3-8 gold example replies for few-shot prompting"
+    }
+  }
+}

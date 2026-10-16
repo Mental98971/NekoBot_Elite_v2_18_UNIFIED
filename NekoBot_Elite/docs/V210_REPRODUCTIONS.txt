@@ -1,0 +1,20 @@
+Reproductions of v2.10 defects, run against the UNMODIFIED v2.10 handlers/middleware (python-telegram-bot 22.x, SQLite),
+driven by the fakes in tests/_fakes.py. One line per scenario; numbers refer to the table in docs/CHANGELOG.md (v2.12).
+Scenario 6 is a model: the fake raises BadRequest for the anonymous-admin account, which is what the code path assumes
+about Telegram's answer - that answer itself was not verified against the live API. In scenario 1 the trailing
+"Failed: ... run_once" text is an artefact of the fake context having no job queue, not a v2.10 defect.
+
+[1 tz IST /tban 30m] until_date=int, -18001s from now; reply=🔨 <b>Banned</b> <a href="tg://user?id=42">Vic</a> for 30m. <b>Reason:</b> No reason provid | ❌ Failed: 'NoneType' object has no attribute 'run_once'; err=None
+[3 /unban 555] unban_called=False; reply=Usage: /unban <user_id> or reply; err=None
+[4a admin WITHOUT ban right bans a member] ban_called=True; reply=🔨 <b>Banned</b> <a href="tg://user?id=42">Vic</a> permanently. <b>Reason:</b> No reason pr; err=None
+[4b ban an ADMIN] ban_called=True; reply=🔨 <b>Banned</b> <a href="tg://user?id=43">Vic</a> permanently. <b>Reason:</b> No reason pr; err=None
+[4c ban the BOT itself] ban_called=True; reply=🔨 <b>Banned</b> <a href="tg://user?id=999">Vic</a> permanently. <b>Reason:</b> No reason p; err=None
+[5 /unmute] can_change_info=True; can_pin=True; can_invite=True; err=None
+[6 anonymous admin /captcha (fake raises BadRequest for unknown member)] reply=(no reply); err=BadRequest: User not found
+[7 /save twice, /get] note_rows=2; get_reply=Something went sideways inside Neko. The error is logged; try again shortly.; err=None
+[8 filter 'hi' vs text 'this is a normal sentence'] reply=FILTER FIRED; err=None
+[9 flood burst] deleted=8; belonging_to_other_members=4; sample=[108, 109, 110, 111, 112, 113]
+[11 /slowmode 30] reply=Couldn't set slow mode.; err=None
+[12 /purge inside handler] sleeps=[5]; err=None
+[13 /unpin] calls=['unpin_all_chat_messages']; err=None
+[15 /ban then /unbanall] reply=No bans recorded for this chat.; err=None

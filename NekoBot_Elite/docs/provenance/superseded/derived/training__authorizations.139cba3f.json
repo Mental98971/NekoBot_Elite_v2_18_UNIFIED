@@ -1,0 +1,34 @@
+{
+ "_comment": "Weight training bakes a person's messages into model weights, and weights cannot forget one person later, so training/train_lora.py requires, per person: status=granted, scope including weights_training, and non-empty granted_by / evidence / date. Both records below were filled in on 2026-10-07 from the evidence quoted in each record (the person's own reply to the request). The evidence text was supplied by the project owner and is not independently verifiable by the toolkit; keep the original chat. A granted record does not expire, so no repeated authorization is needed. The person can still withdraw: python -m training.revoke --person <id> marks the record revoked and deletes their adapters, which also stops the bot from serving them.",
+ "schema": 1,
+ "persons": {
+  "tanvi": {
+   "status": "granted",
+   "scope": [
+    "weights_training",
+    "fine_tuning",
+    "training",
+    "storage",
+    "modification",
+    "any_use_including_future"
+   ],
+   "granted_by": "tanvi (self; reply to the project owner's request)",
+   "evidence": "Request from the project owner, 6 Oct 2026 6:40: 'Hey can use your data/info etc to store, modify, fine tuning, train and all any way I desire as long as as I want and even in furute. I assre you I have no ill intent and will never intentionally cause you any harm' | Tanvi's reply, 07/10/26 7:36 pm, in reply to that message: 'Yesp'",
+   "date": "2026-10-07"
+  },
+  "yashmeet": {
+   "status": "granted",
+   "scope": [
+    "weights_training",
+    "fine_tuning",
+    "training",
+    "storage",
+    "modification",
+    "any_use_including_future"
+   ],
+   "granted_by": "yashmeet (self; reply to the project owner's request)",
+   "evidence": "Request from the project owner, 6 Oct 2026 6:40: 'Hey can use your data/info etc to store, modify, fine tuning, train and all any way I desire as long as as I want and even in furute. I assre you I have no ill intent and will never intentionally cause you any harm' | Yashmeet's reply, 07/10/26 7:45 pm, in reply to that message: 'Yes'",
+   "date": "2026-10-07"
+  }
+ }
+}

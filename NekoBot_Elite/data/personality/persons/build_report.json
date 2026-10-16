@@ -1,0 +1,94 @@
+{
+ "blocked_name_tokens": 394,
+ "messages_total": 34020,
+ "persons": {
+  "sonal": {
+   "by_account": {
+    "5190868757": 3900
+   },
+   "by_kind": {
+    "command": 4,
+    "emoji_only": 246,
+    "media": 720,
+    "text": 2930
+   },
+   "records": 3900
+  },
+  "tanvi": {
+   "by_account": {
+    "7187486402": 2194,
+    "7883544685": 9652
+   },
+   "by_kind": {
+    "command": 427,
+    "emoji_only": 78,
+    "media": 1859,
+    "text": 9482
+   },
+   "merge": {
+    "added": 1125,
+    "already_present": 10721,
+    "enriched": 10721,
+    "existing": 10721,
+    "from_sources": 11846,
+    "merged_total": 11846,
+    "only_in_old": 0,
+    "text_differs_kept_old": 0
+   },
+   "records": 11846
+  },
+  "yashmeet": {
+   "by_account": {
+    "5553376334": 4826
+   },
+   "by_kind": {
+    "command": 844,
+    "emoji_only": 223,
+    "media": 960,
+    "text": 2799
+   },
+   "merge": {
+    "added": 0,
+    "already_present": 4826,
+    "enriched": 4826,
+    "existing": 4826,
+    "from_sources": 4826,
+    "merged_total": 4826,
+    "only_in_old": 0,
+    "text_differs_kept_old": 0
+   },
+   "records": 4826
+  }
+ },
+ "sources": {
+  "MASTER_PERSON_GALAXY_ANHILATOR.jsonl": {
+   "message": 4826
+  },
+  "MASTER_PERSON_GALAXY_ANHILATOR_RICH.jsonl": {
+   "message": 1453
+  },
+  "SONAL_MASTER.jsonl": {
+   "message": 3900
+  },
+  "TANVI_MASTER.jsonl": {
+   "message": 11846
+  },
+  "YASHMEET_MASTER.jsonl": {
+   "message": 4826
+  },
+  "You_are_mine_143_Iziiee_7883544685_MASTER_dataset.jsonl": {
+   "message": 23736,
+   "roster": 13429,
+   "roster_unparsed": 3,
+   "unattributed": 22
+  },
+  "You_are_mine_143_Iziiee_7883544685_dataset.jsonl": {
+   "message": 10721
+  },
+  "extracted_dataset.json": {
+   "message": 11383,
+   "unattributed": 3
+  }
+ },
+ "warnings": []
+}

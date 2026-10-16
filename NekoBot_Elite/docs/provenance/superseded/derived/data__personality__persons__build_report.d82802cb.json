@@ -1,0 +1,67 @@
+{
+ "blocked_name_tokens": 391,
+ "messages_total": 29011,
+ "persons": {
+  "tanvi": {
+   "by_account": {
+    "7187486402": 2194,
+    "7883544685": 8527
+   },
+   "by_kind": {
+    "command": 386,
+    "emoji_only": 72,
+    "media": 1751,
+    "text": 8512
+   },
+   "records": 10721
+  },
+  "yashmeet": {
+   "by_account": {
+    "5553376334": 4826
+   },
+   "by_kind": {
+    "command": 844,
+    "emoji_only": 223,
+    "media": 960,
+    "text": 2799
+   },
+   "records": 4826
+  }
+ },
+ "sources": {
+  "MASTER_PERSON_GALAXY_ANHILATOR.db": {
+   "message": 4826
+  },
+  "MASTER_PERSON_GALAXY_ANHILATOR.jsonl": {
+   "message": 4826
+  },
+  "MASTER_PERSON_GALAXY_ANHILATOR_RICH.db": {
+   "message": 1453
+  },
+  "MASTER_PERSON_GALAXY_ANHILATOR_RICH.jsonl": {
+   "message": 1453
+  },
+  "You_are_mine_143_Iziiee_7883544685_MASTER_dataset.csv": {
+   "message": 23736,
+   "roster": 13429,
+   "unattributed": 25
+  },
+  "You_are_mine_143_Iziiee_7883544685_MASTER_dataset.jsonl": {
+   "message": 23736,
+   "roster": 13429,
+   "roster_unparsed": 3,
+   "unattributed": 22
+  },
+  "You_are_mine_143_Iziiee_7883544685_dataset.csv": {
+   "message": 10721
+  },
+  "You_are_mine_143_Iziiee_7883544685_dataset.jsonl": {
+   "message": 10721
+  },
+  "extracted_dataset.json": {
+   "message": 11383,
+   "unattributed": 3
+  }
+ },
+ "warnings": []
+}

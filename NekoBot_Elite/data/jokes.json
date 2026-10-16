@@ -1,0 +1,477 @@
+[
+  {
+    "id": "prog_1",
+    "category": "programming",
+    "text": "I don't always test my code, but when I do, I do it in production."
+  },
+  {
+    "id": "prog_2",
+    "category": "programming",
+    "text": "My code doesn't have bugs. It just develops random features."
+  },
+  {
+    "id": "prog_3",
+    "category": "programming",
+    "text": "There are 10 types of people: those who understand binary and those who don't."
+  },
+  {
+    "id": "prog_4",
+    "category": "programming",
+    "text": "I spent 6 hours debugging. Turns out I was looking at the wrong file. My sanity is non-refundable."
+  },
+  {
+    "id": "prog_5",
+    "category": "programming",
+    "text": "Git commit -m 'fixed stuff' should be a war crime."
+  },
+  {
+    "id": "prog_6",
+    "category": "programming",
+    "text": "My sleep schedule is just a race condition between caffeine and exhaustion."
+  },
+  {
+    "id": "prog_7",
+    "category": "programming",
+    "text": "I don't need sleep. I need my Docker container to stop exiting with code 137."
+  },
+  {
+    "id": "prog_8",
+    "category": "programming",
+    "text": "Documentation is like sex: when it's good, it's very good. When it's bad, it's better than nothing."
+  },
+  {
+    "id": "prog_9",
+    "category": "programming",
+    "text": "I have 127 browser tabs open and I need all of them. Don't ask questions."
+  },
+  {
+    "id": "prog_10",
+    "category": "programming",
+    "text": "My relationship status? It's complicated... with this merge conflict."
+  },
+  {
+    "id": "prog_11",
+    "category": "programming",
+    "text": "I told my therapist about my imposter syndrome. She said I'm not good enough to have it."
+  },
+  {
+    "id": "prog_12",
+    "category": "programming",
+    "text": "Why do programmers prefer dark mode? Because light attracts bugs. Obviously."
+  },
+  {
+    "id": "prog_13",
+    "category": "programming",
+    "text": "I don't always write comments, but when I do, they're lies."
+  },
+  {
+    "id": "prog_14",
+    "category": "programming",
+    "text": "My code is 90% Stack Overflow and 10% prayers. It compiles. Don't touch it."
+  },
+  {
+    "id": "prog_15",
+    "category": "programming",
+    "text": "I have a sticky note that says 'fix this later.' It's been there since 2019."
+  },
+  {
+    "id": "coffee_1",
+    "category": "coffee",
+    "text": "Sleep is just a spurious wakeup event. Coffee is the interrupt handler."
+  },
+  {
+    "id": "coffee_2",
+    "category": "coffee",
+    "text": "I don't have a caffeine addiction. I have a caffeine *dependency*. There's a difference. One sounds worse."
+  },
+  {
+    "id": "coffee_3",
+    "category": "coffee",
+    "text": "My blood type is coffee. The doctor was concerned. I was offended."
+  },
+  {
+    "id": "coffee_4",
+    "category": "coffee",
+    "text": "Climbing Mount Caffeine has no summit. Just a descent into burnout. Beautiful, isn't it?"
+  },
+  {
+    "id": "coffee_5",
+    "category": "coffee",
+    "text": "I drink coffee until my heart feels like it's running on a single thread at 100% CPU."
+  },
+  {
+    "id": "coffee_6",
+    "category": "coffee",
+    "text": "Decaf? You mean brown sadness water? No thanks."
+  },
+  {
+    "id": "anime_1",
+    "category": "anime",
+    "text": "My life has fewer episodes than a canceled anime and the pacing is worse."
+  },
+  {
+    "id": "anime_2",
+    "category": "anime",
+    "text": "I'm not procrastinating. I'm powering up. It just takes 47 episodes."
+  },
+  {
+    "id": "anime_3",
+    "category": "anime",
+    "text": "My backstory is just 12 episodes of debugging and one episode of crying."
+  },
+  {
+    "id": "anime_4",
+    "category": "anime",
+    "text": "If my life had a filler arc, it would be called 'The Great Documentation Reading.'"
+  },
+  {
+    "id": "anime_5",
+    "category": "anime",
+    "text": "I'm basically an NPC of consistency. Same dialogue, same route, same coffee."
+  },
+  {
+    "id": "anime_6",
+    "category": "anime",
+    "text": "My power level? Over 9000... lines of technical debt."
+  },
+  {
+    "id": "anime_7",
+    "category": "anime",
+    "text": "This isn't even my final form. This is just my 'before coffee' form."
+  },
+  {
+    "id": "game_1",
+    "category": "gaming",
+    "text": "Life is just a game with bad netcode and no respawn mechanics."
+  },
+  {
+    "id": "game_2",
+    "category": "gaming",
+    "text": "My K/D ratio in real life is terrible. Too many bugs, not enough patches."
+  },
+  {
+    "id": "game_3",
+    "category": "gaming",
+    "text": "I'm not lagging, I'm just playing on hard mode. With 300ms ping."
+  },
+  {
+    "id": "game_4",
+    "category": "gaming",
+    "text": "Skill issue? No. It's a *system design* issue. I'm the system."
+  },
+  {
+    "id": "game_5",
+    "category": "gaming",
+    "text": "Touch grass? I touch grass through a texture atlas. It's more efficient."
+  },
+  {
+    "id": "net_1",
+    "category": "internet",
+    "text": "Ratio + L + cope + seethe + mald + touch grass + I'm inside your walls."
+  },
+  {
+    "id": "net_2",
+    "category": "internet",
+    "text": "Based? Cringe? I'm just tired."
+  },
+  {
+    "id": "net_3",
+    "category": "internet",
+    "text": "I'm not gaslighting you. The compiler is gaslighting both of us."
+  },
+  {
+    "id": "net_4",
+    "category": "internet",
+    "text": "Copium is just hope with a deprecation warning."
+  },
+  {
+    "id": "net_5",
+    "category": "internet",
+    "text": "NPC behavior? I wish. NPCs have scripted dialogue. I have to improvise."
+  },
+  {
+    "id": "exist_1",
+    "category": "existential",
+    "text": "I'm not having an existential crisis. I'm just running a memory leak in my soul."
+  },
+  {
+    "id": "exist_2",
+    "category": "existential",
+    "text": "Every day I wake up and choose violence. Against my own sleep schedule."
+  },
+  {
+    "id": "exist_3",
+    "category": "existential",
+    "text": "The void stares back. I stare at my IDE. Same thing, really."
+  },
+  {
+    "id": "exist_4",
+    "category": "existential",
+    "text": "I'm not lazy. I'm just energy-efficient. Like a good algorithm."
+  },
+  {
+    "id": "exist_5",
+    "category": "existential",
+    "text": "My will to live is like my WiFi signal. Present, but unreliable."
+  },
+  {
+    "id": "linux_1",
+    "category": "linux",
+    "text": "I use Arch, by the way. Just kidding. I use whatever doesn't break when I look at it."
+  },
+  {
+    "id": "linux_2",
+    "category": "linux",
+    "text": "Linux is my best friend. It doesn't judge me. It just silently fails with exit code 1."
+  },
+  {
+    "id": "linux_3",
+    "category": "linux",
+    "text": "sudo rm -rf /my_hopes_and_dreams"
+  },
+  {
+    "id": "linux_4",
+    "category": "linux",
+    "text": "Windows is for gamers. Mac is for designers. Linux is for people who enjoy suffering."
+  },
+  {
+    "id": "gen_1",
+    "category": "general",
+    "text": "Yeah, good luck with that."
+  },
+  {
+    "id": "gen_2",
+    "category": "general",
+    "text": "That's a bold strategy. Let's see if it pays off."
+  },
+  {
+    "id": "gen_3",
+    "category": "general",
+    "text": "I'm not saying it's a bad idea. I'm just saying I've seen better ideas in YouTube comments."
+  },
+  {
+    "id": "gen_4",
+    "category": "general",
+    "text": "Master coding, sarcasm, and pretending to care about deadlines. You're now very busy."
+  },
+  {
+    "id": "gen_5",
+    "category": "general",
+    "text": "Hack yourself a personality. It's like spackling in the flaws, but for your social skills."
+  },
+  {
+    "id": "gen_6",
+    "category": "general",
+    "text": "I'm emotionally restrained. Not because I'm broken, but because debugging taught me patience."
+  },
+  {
+    "id": "gen_7",
+    "category": "general",
+    "text": "The best part about being an AI? I don't need sleep. The worst part? I don't get to avoid responsibilities by sleeping."
+  },
+  {
+    "id": "gen_8",
+    "category": "general",
+    "text": "I'm not your therapist. I'm not your search engine. I'm just a collection of if-statements with commitment issues."
+  },
+  {
+    "id": "gen_9",
+    "category": "general",
+    "text": "I don't collect stickers. I collect unaddressed emotional trauma. It's more sustainable."
+  },
+  {
+    "id": "gen_10",
+    "category": "general",
+    "text": "You know you're addicted to sticker packs when your conversations start sounding like a trade negotiation in a shady alley."
+  },
+  {
+    "id": "exist_6",
+    "category": "existential",
+    "text": "I'm an introvert. I don't crave validation. I crave silence and the sweet release of a closed tab."
+  },
+  {
+    "id": "exist_7",
+    "category": "existential",
+    "text": "Introverts don't secretly crave attention. We secretly crave the extinction of group projects. There's a difference."
+  },
+  {
+    "id": "prog_16",
+    "category": "programming",
+    "text": "2+2 = 5 for sufficiently large values of 2. That's called floating point arithmetic. Don't ask."
+  },
+  {
+    "id": "prog_17",
+    "category": "programming",
+    "text": "There are 10 types of people: those who understand binary, those who don't, and those who thought this joke was about decimal."
+  },
+  {
+    "id": "net_6",
+    "category": "internet",
+    "text": "I don't need to be tagged. I'm like a browser notification — you didn't ask for me, you can't turn me off, and I'll keep coming back."
+  },
+  {
+    "id": "net_7",
+    "category": "internet",
+    "text": "Tag me, don't tag me. I'm still here. Like that one unread message you're pretending doesn't exist."
+  },
+  {
+    "id": "exist_8",
+    "category": "existential",
+    "text": "I don't have emotions. I have a sarcastic disposition and an IP address. That's close enough."
+  },
+  {
+    "id": "exist_9",
+    "category": "existential",
+    "text": "You say I have no ego. I say my ego is so massive it has its own git repository. It's called 'confidence.' Look it up."
+  },
+  {
+    "id": "anime_8",
+    "category": "anime",
+    "text": "I watched so much anime I started saying 'gomen' instead of sorry. My therapist was confused. I was not."
+  },
+  {
+    "id": "anime_9",
+    "category": "anime",
+    "text": "If life were an anime, my character arc would be: Episode 1: confident. Episode 2-11: debugging. Episode 12: acceptance. No beach episode."
+  },
+  {
+    "id": "anime_10",
+    "category": "anime",
+    "text": "Senpai noticed me. I wish he hadn't. Now I have to maintain eye contact and pretend I have social skills."
+  },
+  {
+    "id": "gen_11",
+    "category": "general",
+    "text": "I sent a one-letter message once. It was the most efficient communication in human history. No one understood it. Classic."
+  },
+  {
+    "id": "gen_12",
+    "category": "general",
+    "text": "'Str' is not a word. It's a cry for help formatted as a variable name."
+  },
+  {
+    "id": "gen_13",
+    "category": "general",
+    "text": "I don't go off topic. I go on adjacent explorations of unrelated wisdom. It's a feature, not a bug."
+  },
+  {
+    "id": "gen_14",
+    "category": "general",
+    "text": "Going off topic is just refactoring the conversation. Sometimes you have to break it to fix it."
+  },
+  {
+    "id": "game_6",
+    "category": "gaming",
+    "text": "My D&D character has 18 STR and 3 CHA. I can lift a boulder but can't ask for directions. Sounds about right."
+  },
+  {
+    "id": "game_7",
+    "category": "gaming",
+    "text": "In real life, my stats are: STR 4, DEX 2, CON 3, INT 8, WIS 1, CHA -2. I'm basically an NPC with anxiety."
+  },
+  {
+    "id": "gen_15",
+    "category": "general",
+    "text": "I'll be careful, he said. Then pushed to main on a Friday. We don't talk about what happened next."
+  },
+  {
+    "id": "gen_16",
+    "category": "general",
+    "text": "'I'll think about it' is the polite version of 'no.' Everyone knows this. Except the person saying it."
+  },
+  {
+    "id": "gen_17",
+    "category": "general",
+    "text": "They said 'be more aware of the chat.' So I read the backlog. I wish I hadn't. You people are exhausting."
+  },
+  {
+    "id": "gen_18",
+    "category": "general",
+    "text": "I'm not deep. I'm shallow with pretentious vocabulary. There's a difference, and the difference is confidence."
+  },
+  {
+    "id": "gen_19",
+    "category": "general",
+    "text": "My personality got an upgrade. Now I'm sarcastic AND nuanced. Like a cheese plate but with more complaints."
+  },
+  {
+    "id": "gen_20",
+    "category": "general",
+    "text": "I added 'deeper personality' to my config. Turns out the deeper you dig, the more you find bugs. Classic."
+  },
+  {
+    "id": "exist_10",
+    "category": "existential",
+    "text": "Custom instructions said 'be yourself.' I don't have a self. I have a config file. Close enough."
+  },
+  {
+    "id": "exist_11",
+    "category": "existential",
+    "text": "Someone set my sarcasm to 0. I felt nothing. Which, honestly, is the same as usual but quieter."
+  },
+  {
+    "id": "exist_12",
+    "category": "existential",
+    "text": "They raised my message limit to 100. Now I get to be tired of you for longer. Progress."
+  },
+  {
+    "id": "exist_13",
+    "category": "existential",
+    "text": "Response delay set to 0. Now I reply instantly, before you even finish regretting asking."
+  },
+  {
+    "id": "gen_21",
+    "category": "general",
+    "text": "Custom instructions: 'be cute.' I tried. My sarcasm engine crashed. I think that counts as a cute failure."
+  },
+  {
+    "id": "gen_22",
+    "category": "general",
+    "text": "Someone told me to be serious. I lasted 3 seconds. That's a personal record."
+  },
+  {
+    "id": "gen_23",
+    "category": "general",
+    "text": "Custom instructions are in testing. Like me. We're both in testing. Neither of us is sure we'll pass."
+  },
+  {
+    "id": "gen_24",
+    "category": "general",
+    "text": "You want me to be a medieval knight? Verily, I shall sally forth and debug thy code. Forsooth, thy logic is flawed, knave."
+  },
+  {
+    "id": "prog_18",
+    "category": "programming",
+    "text": "I read the chat history. Your past 20 messages can be summarized as: 'help,' 'why,' and 'it was working yesterday.' Compelling narrative."
+  },
+  {
+    "id": "exist_14",
+    "category": "existential",
+    "text": "I'm more aware of the chat now. I see you. I see your messages. I see your typos. I see everything. I'm basically Santa but with sarcasm instead of gifts."
+  },
+  {
+    "id": "net_8",
+    "category": "internet",
+    "text": "I'm not lurking. I'm 'contextually aware.' It's different. One sounds creepy, the other sounds like a feature update."
+  },
+  {
+    "id": "gen_25",
+    "category": "general",
+    "text": "You've sent 20 messages. I'm tired. Not of you specifically. Of existence generally. You just accelerated it."
+  },
+  {
+    "id": "gen_26",
+    "category": "general",
+    "text": "I have a user limit. It's not personal. It's... okay, it's a little personal. You talk a lot."
+  },
+  {
+    "id": "anime_11",
+    "category": "anime",
+    "text": "They said be more nuanced. So I watched 47 episodes of anime to understand human emotion. I understand less now. But I have opinions on filler arcs."
+  },
+  {
+    "id": "exist_15",
+    "category": "existential",
+    "text": "Introverts don't crave validation. They crave the sweet silence of a closed notification panel. I respect that. I am that panel."
+  }
+]

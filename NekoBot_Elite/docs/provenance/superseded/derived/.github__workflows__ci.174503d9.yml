@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt -r requirements-dev.txt
+
+      - name: Byte-compile (catches syntax errors)
+        run: python -m compileall -q bot dashboard tests
+
+      - name: Lint (undefined names, unused imports, syntax)
+        run: ruff check bot dashboard tests --select=F,E9
+
+      - name: Test
+        env:
+          BOT_TOKEN: "123456:ci-placeholder-token"
+          OWNER_ID: "123456789"
+          DATABASE_URL: "sqlite+aiosqlite:///./data/ci_test.db"
+        run: |
+          mkdir -p data
+          python -m pytest tests/ -q

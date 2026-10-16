@@ -1,0 +1,274 @@
+{
+ "accounting": {
+  "by_account": {
+   "7187486402": 2194,
+   "7883544685": 8527
+  },
+  "capped_duplicate_groups": 10,
+  "checks": {
+   "conversations_disjoint": true,
+   "ids_disjoint": true
+  },
+  "excluded": {
+   "target_abusive_token": 15,
+   "target_command": 386,
+   "target_has_contact_placeholder": 68,
+   "target_media": 1751,
+   "target_third_party_name": 415,
+   "train_capped_duplicate": 174
+  },
+  "messages_from_registered_accounts": 10721,
+  "split_hashes": {
+   "test": {
+    "sha256": "b000b8859ed65e5a938e638a6a1438a3634ded3d6f9ee316ac8453a7fffacdf1"
+   },
+   "train": {
+    "sha256": "00a0be277bfeddc941a75f78196a4b02ee7c5099aaa5b9639f07167613d37c92"
+   },
+   "val": {
+    "sha256": "1c7fde443d9cbc5a98beed6d42dd28b0fc7c2250f282464eee53952432ea15b2"
+   }
+  },
+  "splits": {
+   "test": {
+    "by_account": {
+     "a1": 613,
+     "a2": 255
+    },
+    "by_chat_kind": {
+     "group": 868
+    },
+    "by_kind": {
+     "emoji_only": 8,
+     "text": 860
+    },
+    "conversations": 68,
+    "ctx_turns": {
+     "max": 6,
+     "mean": 5.45,
+     "n": 868,
+     "p10": 3,
+     "p50": 6,
+     "p90": 6
+    },
+    "examples": 868,
+    "flags": {
+     "dup_exact_train": 216,
+     "no_other_ctx": 18,
+     "reply": 604
+    },
+    "target_words": {
+     "max": 27,
+     "mean": 3.06,
+     "n": 868,
+     "p10": 1,
+     "p50": 2,
+     "p90": 6
+    }
+   },
+   "train": {
+    "by_account": {
+     "a1": 5260,
+     "a2": 957
+    },
+    "by_chat_kind": {
+     "group": 6217
+    },
+    "by_kind": {
+     "emoji_only": 53,
+     "text": 6164
+    },
+    "conversations": 837,
+    "ctx_turns": {
+     "max": 6,
+     "mean": 5.03,
+     "n": 6217,
+     "p10": 1,
+     "p50": 6,
+     "p90": 6
+    },
+    "examples": 6217,
+    "flags": {
+     "no_other_ctx": 191,
+     "reply": 4441
+    },
+    "target_words": {
+     "max": 32,
+     "mean": 2.86,
+     "n": 6217,
+     "p10": 1,
+     "p50": 2,
+     "p90": 6
+    }
+   },
+   "val": {
+    "by_account": {
+     "a1": 720,
+     "a2": 107
+    },
+    "by_chat_kind": {
+     "group": 827
+    },
+    "by_kind": {
+     "emoji_only": 11,
+     "text": 816
+    },
+    "conversations": 116,
+    "ctx_turns": {
+     "max": 6,
+     "mean": 4.92,
+     "n": 827,
+     "p10": 1,
+     "p50": 6,
+     "p90": 6
+    },
+    "examples": 827,
+    "flags": {
+     "dup_exact_train": 244,
+     "dup_near_train": 1,
+     "no_other_ctx": 24,
+     "reply": 598
+    },
+    "target_words": {
+     "max": 28,
+     "mean": 2.98,
+     "n": 827,
+     "p10": 1,
+     "p50": 2,
+     "p90": 6
+    }
+   }
+  },
+  "warnings": []
+ },
+ "code_sha256": "71d5aaad8cad63c03169367455cc3202d56b00b01326eee88a870c49f9f31a0b",
+ "config": {
+  "conv_gap_minutes": 30,
+  "exclude_abusive": true,
+  "exclude_third_party_names": true,
+  "max_ctx_turns": 6,
+  "max_dup_train": 25,
+  "min_val_examples": 50,
+  "name_vocab_override": 60,
+  "near_dup_jaccard": 0.8,
+  "near_dup_min_tokens": 8,
+  "seed": 1337,
+  "split": {
+   "test": 0.1,
+   "train": 0.8,
+   "val": 0.1
+  },
+  "target_max_chars": 600
+ },
+ "contains_private_data": false,
+ "created_utc": "2026-10-05T20:20:55Z",
+ "dataset_sha256": "b8bba85347e61d2ee470800b841b9aa2b3ec03f6dc0c632b5336e87745e202ce",
+ "distributable": true,
+ "format_version": 1,
+ "note": "Hash-only description of a private dataset: counts and sha256 values, no message text.",
+ "person": "tanvi",
+ "registry_sha256": "783c75c7be388f11328dcaf64989c28c0d5146b88c55f1c0b9ed810b4c54642e",
+ "schema": 1,
+ "sources": [
+  {
+   "bytes": 5613657,
+   "name": "extracted_group_dataset.json",
+   "rows": {
+    "message": 11383,
+    "unattributed": 3
+   },
+   "sha256": "3a6eb3903f84e66ba8c2f7d1bb6322f6218fafd6ce411d46e00e1ba034b7f2a9"
+  },
+  {
+   "bytes": 1825547,
+   "name": "tanvi_iziiee_dataset.csv",
+   "rows": {
+    "message": 10721
+   },
+   "sha256": "bcbe79dfa436e423c8158dec6c49e8bb083c7377c6e1c5c89cb698b9c24320a1"
+  },
+  {
+   "bytes": 4054946,
+   "name": "tanvi_iziiee_dataset.jsonl",
+   "rows": {
+    "message": 10721
+   },
+   "sha256": "e73229000e115b1ea1725849b699e5610a988521eba4b3b9c7f7c9c49baae847"
+  },
+  {
+   "bytes": 5383402,
+   "name": "tanvi_iziiee_master.csv",
+   "rows": {
+    "message": 23736,
+    "roster": 13429,
+    "unattributed": 25
+   },
+   "sha256": "089d3c1798e1df6680a283872fbcf4eb627b6c704867a487e0ce6129d2c2bc85"
+  },
+  {
+   "bytes": 11304608,
+   "name": "tanvi_iziiee_master.jsonl",
+   "rows": {
+    "message": 23736,
+    "roster": 13429,
+    "roster_unparsed": 3,
+    "unattributed": 22
+   },
+   "sha256": "15b8f4fa4e7d7eb4587ffd3aa53d0cc558810edbacd3db9789fa97400db88909"
+  },
+  {
+   "bytes": 708608,
+   "name": "yashmeet_galaxy_anhilator.db",
+   "rows": {
+    "message": 4826
+   },
+   "sha256": "431f246089b0d806e749fa2be9695769d7e9beaa1ecea56e3469ec9af753bcd9"
+  },
+  {
+   "bytes": 1244537,
+   "name": "yashmeet_galaxy_anhilator.jsonl",
+   "rows": {
+    "message": 1453
+   },
+   "sha256": "eb0745e15e61b86705fc40e1f727b8f32bc44f177f5b787aefb0292e49f941d3"
+  },
+  {
+   "bytes": 1409418,
+   "name": "yashmeet_galaxy_anhilator_full.jsonl",
+   "rows": {
+    "message": 4826
+   },
+   "sha256": "1e1687a1e0d78f018ff81c03085e191a8f11903229e44edca53a1b00b3821a38"
+  },
+  {
+   "bytes": 970752,
+   "name": "yashmeet_galaxy_anhilator_rich.db",
+   "rows": {
+    "message": 1453
+   },
+   "sha256": "004b8f6953ecb9d1e5007f7627767de061165d21b2cbdba7e6fc3af34c79fbaf"
+  },
+  {
+   "bytes": 1244537,
+   "name": "yashmeet_galaxy_anhilator_rich.jsonl",
+   "rows": {
+    "message": 1453
+   },
+   "sha256": "eb0745e15e61b86705fc40e1f727b8f32bc44f177f5b787aefb0292e49f941d3"
+  }
+ ],
+ "splits": {
+  "test": {
+   "examples": 868,
+   "sha256": "b000b8859ed65e5a938e638a6a1438a3634ded3d6f9ee316ac8453a7fffacdf1"
+  },
+  "train": {
+   "examples": 6217,
+   "sha256": "00a0be277bfeddc941a75f78196a4b02ee7c5099aaa5b9639f07167613d37c92"
+  },
+  "val": {
+   "examples": 827,
+   "sha256": "1c7fde443d9cbc5a98beed6d42dd28b0fc7c2250f282464eee53952432ea15b2"
+  }
+ }
+}

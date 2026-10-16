@@ -1,0 +1,14 @@
+{
+  "_comment": "Starting hyper-parameters. Choose final values by validation loss (see docs/FINE_TUNING.md, 'Selecting hyper-parameters'); do not treat these as tuned.",
+  "base_model": null,
+  "method": "lora",
+  "max_seq_len": 512,
+  "seed": 1337,
+  "account_tag_dropout": 0.10,
+  "short_context_rate": 0.25,
+  "lora": {"r": 16, "alpha": 32, "dropout": 0.05, "target_modules": "all-linear"},
+  "optim": {"learning_rate": 0.0002, "weight_decay": 0.0, "warmup_ratio": 0.03, "lr_scheduler": "cosine",
+            "epochs": 3, "per_device_batch": 8, "grad_accum": 4, "max_grad_norm": 1.0},
+  "eval_steps": 100, "save_steps": 100, "logging_steps": 10, "early_stopping_patience": 3,
+  "min_train_examples": 500, "min_val_examples": 50
+}

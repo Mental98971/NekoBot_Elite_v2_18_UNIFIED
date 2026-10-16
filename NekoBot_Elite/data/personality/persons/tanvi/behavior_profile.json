@@ -1,0 +1,3105 @@
+{
+ "accounts": {
+  "a1": 8124,
+  "a2": 1436
+ },
+ "context_dependence": {
+  "by_account": {
+   "features": {
+    "devanagari": {
+     "dependent": false,
+     "effect": 0.0,
+     "p": 1.0,
+     "rate": 0.0
+    },
+    "elongated": {
+     "cv_gain": 0.0006,
+     "cv_positive": 0.83,
+     "dependent": true,
+     "effect": 0.0333,
+     "p": 0.01,
+     "rate": 0.105
+    },
+    "emoji": {
+     "cv_gain": 0.00335,
+     "cv_positive": 0.67,
+     "dependent": false,
+     "effect": 0.1002,
+     "p": 0.0033,
+     "rate": 0.1442
+    },
+    "exclaim": {
+     "dependent": false,
+     "effect": 0.0083,
+     "p": 0.0532,
+     "rate": 0.0145
+    },
+    "hinglish": {
+     "cv_gain": 0.01871,
+     "cv_positive": 1.0,
+     "dependent": true,
+     "effect": 0.1434,
+     "p": 0.0033,
+     "rate": 0.0794
+    },
+    "lower_start": {
+     "dependent": false,
+     "effect": 0.0064,
+     "p": 0.1063,
+     "rate": 0.0173
+    },
+    "no_end_punct": {
+     "dependent": false,
+     "effect": 0.1096,
+     "p": 0.0033,
+     "rate": 0.7607
+    },
+    "question": {
+     "dependent": false,
+     "effect": 0.025,
+     "p": 0.01,
+     "rate": 0.0842
+    },
+    "short": {
+     "dependent": false,
+     "effect": 0.0439,
+     "p": 0.0532,
+     "rate": 0.5842
+    }
+   },
+   "groups_used": 2,
+   "min_group": 100
+  },
+  "by_chat": {
+   "features": {
+    "devanagari": {
+     "dependent": false,
+     "effect": 0.0,
+     "p": 1.0,
+     "rate": 0.0
+    },
+    "elongated": {
+     "dependent": false,
+     "effect": 0.0339,
+     "p": 0.0498,
+     "rate": 0.1051
+    },
+    "emoji": {
+     "cv_gain": 0.00303,
+     "cv_positive": 0.83,
+     "dependent": true,
+     "effect": 0.0853,
+     "p": 0.0033,
+     "rate": 0.1447
+    },
+    "exclaim": {
+     "dependent": false,
+     "effect": 0.0146,
+     "p": 0.2492,
+     "rate": 0.0146
+    },
+    "hinglish": {
+     "cv_gain": 0.02182,
+     "cv_positive": 1.0,
+     "dependent": true,
+     "effect": 0.137,
+     "p": 0.0033,
+     "rate": 0.079
+    },
+    "lower_start": {
+     "dependent": false,
+     "effect": 0.0173,
+     "p": 0.5847,
+     "rate": 0.0173
+    },
+    "no_end_punct": {
+     "dependent": false,
+     "effect": 0.0956,
+     "p": 0.0033,
+     "rate": 0.7602
+    },
+    "question": {
+     "dependent": false,
+     "effect": 0.0403,
+     "p": 0.0133,
+     "rate": 0.0841
+    },
+    "short": {
+     "cv_gain": 0.00193,
+     "cv_positive": 0.83,
+     "dependent": true,
+     "effect": 0.1631,
+     "p": 0.0066,
+     "rate": 0.5836
+    }
+   },
+   "groups_used": 8,
+   "min_group": 60
+  }
+ },
+ "context_dependent_features": {
+  "account": [
+   "elongated",
+   "hinglish"
+  ],
+  "chat": [
+   "emoji",
+   "hinglish",
+   "short"
+  ]
+ },
+ "evidence_floor": {
+  "min_act_support": 12,
+  "recurring_min_count": 10,
+  "recurring_min_units": 5,
+  "unusual_min_count": 8
+ },
+ "latency_seconds": {
+  "n": 9160,
+  "p10": 0,
+  "p25": 0,
+  "p50": 0,
+  "p75": 0,
+  "p90": 0
+ },
+ "lexicon": {
+  "recurring": [
+   {
+    "gram": "lol",
+    "n": 319,
+    "rate": 0.03337,
+    "units": 174,
+    "vs_others": 2.6
+   },
+   {
+    "gram": "you're",
+    "n": 135,
+    "rate": 0.01412,
+    "units": 62,
+    "vs_others": 2.6
+   },
+   {
+    "gram": "haha",
+    "n": 138,
+    "rate": 0.01444,
+    "units": 68,
+    "vs_others": 2.3
+   },
+   {
+    "gram": "cz",
+    "n": 76,
+    "rate": 0.00795,
+    "units": 47,
+    "vs_others": 4.8
+   },
+   {
+    "gram": "ohh",
+    "n": 115,
+    "rate": 0.01203,
+    "units": 78,
+    "vs_others": 2.0
+   },
+   {
+    "gram": "hnn",
+    "n": 80,
+    "rate": 0.00837,
+    "units": 21,
+    "vs_others": 3.6
+   },
+   {
+    "gram": "lmao",
+    "n": 94,
+    "rate": 0.00983,
+    "units": 68,
+    "vs_others": 2.3
+   },
+   {
+    "gram": "eh",
+    "n": 73,
+    "rate": 0.00764,
+    "units": 55,
+    "vs_others": 3.6
+   },
+   {
+    "gram": "yep",
+    "n": 69,
+    "rate": 0.00722,
+    "units": 61,
+    "vs_others": 3.7
+   },
+   {
+    "gram": "noo",
+    "n": 79,
+    "rate": 0.00826,
+    "units": 38,
+    "vs_others": 2.3
+   },
+   {
+    "gram": "ehh",
+    "n": 66,
+    "rate": 0.0069,
+    "units": 46,
+    "vs_others": 3.1
+   },
+   {
+    "gram": "nope",
+    "n": 77,
+    "rate": 0.00805,
+    "units": 43,
+    "vs_others": 2.3
+   },
+   {
+    "gram": "ni",
+    "n": 74,
+    "rate": 0.00774,
+    "units": 34,
+    "vs_others": 2.4
+   },
+   {
+    "gram": "ntg",
+    "n": 57,
+    "rate": 0.00596,
+    "units": 50,
+    "vs_others": 3.4
+   },
+   {
+    "gram": "mei",
+    "n": 51,
+    "rate": 0.00533,
+    "units": 20,
+    "vs_others": 3.6
+   },
+   {
+    "gram": "yay",
+    "n": 56,
+    "rate": 0.00586,
+    "units": 44,
+    "vs_others": 3.0
+   },
+   {
+    "gram": "mhm",
+    "n": 46,
+    "rate": 0.00481,
+    "units": 40,
+    "vs_others": 3.7
+   },
+   {
+    "gram": "cutee",
+    "n": 42,
+    "rate": 0.00439,
+    "units": 31,
+    "vs_others": 4.2
+   },
+   {
+    "gram": "ikr",
+    "n": 42,
+    "rate": 0.00439,
+    "units": 35,
+    "vs_others": 3.9
+   },
+   {
+    "gram": "ain't",
+    "n": 57,
+    "rate": 0.00596,
+    "units": 38,
+    "vs_others": 2.1
+   },
+   {
+    "gram": "lmaoo",
+    "n": 36,
+    "rate": 0.00377,
+    "units": 32,
+    "vs_others": 4.9
+   },
+   {
+    "gram": "hie",
+    "n": 31,
+    "rate": 0.00324,
+    "units": 30,
+    "vs_others": 6.6
+   },
+   {
+    "gram": "hiee",
+    "n": 51,
+    "rate": 0.00533,
+    "units": 45,
+    "vs_others": 2.4
+   },
+   {
+    "gram": "okie",
+    "n": 45,
+    "rate": 0.00471,
+    "units": 28,
+    "vs_others": 3.0
+   },
+   {
+    "gram": "nahh",
+    "n": 42,
+    "rate": 0.00439,
+    "units": 35,
+    "vs_others": 3.4
+   },
+   {
+    "gram": "mee",
+    "n": 35,
+    "rate": 0.00366,
+    "units": 26,
+    "vs_others": 4.8
+   },
+   {
+    "gram": "ya",
+    "n": 51,
+    "rate": 0.00533,
+    "units": 38,
+    "vs_others": 2.2
+   },
+   {
+    "gram": "wht",
+    "n": 41,
+    "rate": 0.00429,
+    "units": 35,
+    "vs_others": 2.9
+   },
+   {
+    "gram": "shut",
+    "n": 21,
+    "rate": 0.0022,
+    "units": 17,
+    "vs_others": 9.8
+   },
+   {
+    "gram": "goodie",
+    "n": 24,
+    "rate": 0.00251,
+    "units": 24,
+    "vs_others": 6.2
+   },
+   {
+    "gram": "spa",
+    "n": 28,
+    "rate": 0.00293,
+    "units": 14,
+    "vs_others": 4.3
+   },
+   {
+    "gram": "smtg",
+    "n": 26,
+    "rate": 0.00272,
+    "units": 22,
+    "vs_others": 4.7
+   },
+   {
+    "gram": "wha",
+    "n": 34,
+    "rate": 0.00356,
+    "units": 28,
+    "vs_others": 2.7
+   },
+   {
+    "gram": "bout",
+    "n": 38,
+    "rate": 0.00397,
+    "units": 32,
+    "vs_others": 2.1
+   },
+   {
+    "gram": "ty",
+    "n": 28,
+    "rate": 0.00293,
+    "units": 18,
+    "vs_others": 3.1
+   },
+   {
+    "gram": "soo",
+    "n": 31,
+    "rate": 0.00324,
+    "units": 29,
+    "vs_others": 2.5
+   },
+   {
+    "gram": "woah",
+    "n": 32,
+    "rate": 0.00335,
+    "units": 28,
+    "vs_others": 2.3
+   },
+   {
+    "gram": "shut up",
+    "n": 17,
+    "rate": 0.00178,
+    "units": 15,
+    "vs_others": 7.9
+   },
+   {
+    "gram": "you'll",
+    "n": 20,
+    "rate": 0.00209,
+    "units": 17,
+    "vs_others": 5.2
+   },
+   {
+    "gram": "hbu",
+    "n": 21,
+    "rate": 0.0022,
+    "units": 21,
+    "vs_others": 4.4
+   }
+  ],
+  "unusual_words": [
+   [
+    "shut",
+    21,
+    2.55
+   ],
+   [
+    "hie",
+    31,
+    2.14
+   ],
+   [
+    "peeps",
+    8,
+    3.23
+   ],
+   [
+    "lol",
+    319,
+    1.2
+   ],
+   [
+    "hnn",
+    80,
+    1.55
+   ],
+   [
+    "goodie",
+    24,
+    2.09
+   ],
+   [
+    "lmaoo",
+    36,
+    1.86
+   ],
+   [
+    "yep",
+    69,
+    1.57
+   ],
+   [
+    "mee",
+    35,
+    1.83
+   ],
+   [
+    "prolly",
+    12,
+    2.52
+   ],
+   [
+    "cutee",
+    42,
+    1.71
+   ],
+   [
+    "ikr",
+    42,
+    1.62
+   ],
+   [
+    "mei",
+    51,
+    1.54
+   ],
+   [
+    "exacy",
+    11,
+    2.44
+   ],
+   [
+    "rinn",
+    11,
+    2.44
+   ],
+   [
+    "ntg",
+    57,
+    1.48
+   ],
+   [
+    "mhm",
+    46,
+    1.56
+   ],
+   [
+    "you're",
+    135,
+    1.21
+   ],
+   [
+    "smtg",
+    26,
+    1.8
+   ],
+   [
+    "innit",
+    14,
+    2.16
+   ],
+   [
+    "you'll",
+    20,
+    1.92
+   ],
+   [
+    "spa",
+    28,
+    1.73
+   ],
+   [
+    "gtk",
+    17,
+    2.01
+   ],
+   [
+    "ehh",
+    66,
+    1.36
+   ],
+   [
+    "nahh",
+    42,
+    1.47
+   ],
+   [
+    "hoho",
+    16,
+    1.95
+   ],
+   [
+    "kay",
+    13,
+    2.09
+   ],
+   [
+    "yay",
+    56,
+    1.36
+   ],
+   [
+    "hbu",
+    21,
+    1.76
+   ],
+   [
+    "thnks",
+    21,
+    1.76
+   ],
+   [
+    "lowkey",
+    18,
+    1.81
+   ],
+   [
+    "haha",
+    138,
+    1.07
+   ],
+   [
+    "okie",
+    45,
+    1.35
+   ],
+   [
+    "tyfa",
+    9,
+    2.24
+   ],
+   [
+    "whatt",
+    12,
+    2.01
+   ],
+   [
+    "hihi",
+    19,
+    1.66
+   ],
+   [
+    "lmao",
+    94,
+    1.09
+   ],
+   [
+    "noo",
+    81,
+    1.12
+   ],
+   [
+    "wht",
+    41,
+    1.32
+   ],
+   [
+    "casino",
+    14,
+    1.82
+   ]
+  ]
+ },
+ "n_messages": 9560,
+ "n_with_trigger": 9190,
+ "person": "tanvi",
+ "retrieval_weights": {
+  "acct_bonus": 0.0,
+  "chat_bonus": 0.0
+ },
+ "schema": 1,
+ "source": {
+  "corpus_rows": 11846,
+  "corpus_sha256": "b6e2d84df0d5c935912cf18cd73271305a3c0238db09c16850f46a2e21a41bd4",
+  "latency": {
+   "dataset_sha256": "43d29dfd6fbd6e9df9e9cce7e2fb29e2ee2925b5e6bde59e48005f66f0130870",
+   "meaning": "seconds since the previous message in the same conversation"
+  }
+ },
+ "tables": {
+  "accounts": {
+   "a1": {
+    "act_all": {
+     "agree": 255,
+     "disagree": 202,
+     "goodbye": 28,
+     "greeting": 194,
+     "laughter": 350,
+     "other": 6285,
+     "question": 767,
+     "thanks": 43
+    },
+    "act_given_trigger": {
+     "agree": {
+      "agree": 20,
+      "disagree": 15,
+      "greeting": 5,
+      "laughter": 25,
+      "other": 215,
+      "question": 34,
+      "thanks": 1
+     },
+     "ambient": {
+      "agree": 6,
+      "disagree": 1,
+      "greeting": 6,
+      "laughter": 8,
+      "other": 200,
+      "question": 25,
+      "thanks": 1
+     },
+     "apology": {
+      "agree": 1,
+      "disagree": 1,
+      "goodbye": 1,
+      "other": 24,
+      "question": 2
+     },
+     "disagree": {
+      "agree": 16,
+      "disagree": 7,
+      "greeting": 1,
+      "laughter": 6,
+      "other": 101,
+      "question": 10
+     },
+     "emoji_only": {
+      "agree": 3,
+      "disagree": 1,
+      "laughter": 3,
+      "other": 50,
+      "question": 4,
+      "thanks": 1
+     },
+     "goodbye": {
+      "agree": 3,
+      "goodbye": 3,
+      "laughter": 1,
+      "other": 14,
+      "question": 3
+     },
+     "greeting": {
+      "agree": 4,
+      "disagree": 1,
+      "goodbye": 5,
+      "greeting": 89,
+      "laughter": 2,
+      "other": 125,
+      "question": 12
+     },
+     "laughter": {
+      "agree": 9,
+      "disagree": 4,
+      "goodbye": 1,
+      "greeting": 6,
+      "laughter": 26,
+      "other": 214,
+      "question": 19,
+      "thanks": 1
+     },
+     "media": {
+      "agree": 5,
+      "disagree": 6,
+      "goodbye": 2,
+      "greeting": 12,
+      "laughter": 15,
+      "other": 233,
+      "question": 22,
+      "thanks": 1
+     },
+     "question_wh": {
+      "agree": 7,
+      "disagree": 3,
+      "goodbye": 2,
+      "greeting": 7,
+      "laughter": 10,
+      "other": 424,
+      "question": 45,
+      "thanks": 1
+     },
+     "question_yn": {
+      "agree": 20,
+      "disagree": 33,
+      "greeting": 1,
+      "laughter": 11,
+      "other": 329,
+      "question": 61,
+      "thanks": 2
+     },
+     "request": {
+      "agree": 5,
+      "disagree": 7,
+      "goodbye": 1,
+      "greeting": 2,
+      "laughter": 4,
+      "other": 97,
+      "question": 13
+     },
+     "statement": {
+      "agree": 156,
+      "disagree": 123,
+      "goodbye": 13,
+      "greeting": 64,
+      "laughter": 237,
+      "other": 4232,
+      "question": 514,
+      "thanks": 33
+     },
+     "thanks": {
+      "greeting": 1,
+      "laughter": 2,
+      "other": 27,
+      "question": 3,
+      "thanks": 2
+     }
+    },
+    "emoji": {
+     "☠": 7,
+     "✌": 8,
+     "✨": 70,
+     "❤": 3,
+     "🌷": 2,
+     "🍓": 9,
+     "🎀": 43,
+     "🏻": 63,
+     "👺": 11,
+     "👾": 2,
+     "💀": 6,
+     "💅": 36,
+     "💌": 25,
+     "💐": 9,
+     "💔": 16,
+     "💗": 19,
+     "💟": 14,
+     "🗿": 30,
+     "😂": 46,
+     "😋": 35,
+     "😔": 78,
+     "😭": 758,
+     "🙏": 7,
+     "🤌": 6,
+     "🤨": 5,
+     "🤭": 6,
+     "🥀": 50,
+     "🪼": 8,
+     "🫂": 4,
+     "🫵": 6
+    },
+    "kind_given_reply": {
+     "agree": {
+      "text": 255
+     },
+     "disagree": {
+      "text": 202
+     },
+     "goodbye": {
+      "text": 28
+     },
+     "greeting": {
+      "text": 194
+     },
+     "laughter": {
+      "emoji_only": 1,
+      "text": 349
+     },
+     "other": {
+      "emoji_only": 61,
+      "text": 6224
+     },
+     "question": {
+      "emoji_only": 5,
+      "text": 762
+     },
+     "thanks": {
+      "text": 43
+     }
+    },
+    "len_all": {
+     "1": 3044,
+     "2": 1639,
+     "3": 974,
+     "4": 1368,
+     "5": 791,
+     "6": 231,
+     "7": 63,
+     "8": 14
+    },
+    "len_given_pair": {
+     "agree|agree": {
+      "1": 20
+     },
+     "agree|disagree": {
+      "1": 15
+     },
+     "agree|greeting": {
+      "1": 2,
+      "2": 3
+     },
+     "agree|laughter": {
+      "1": 25
+     },
+     "agree|other": {
+      "1": 66,
+      "2": 61,
+      "3": 32,
+      "4": 36,
+      "5": 13,
+      "6": 7
+     },
+     "agree|question": {
+      "1": 10,
+      "2": 6,
+      "3": 3,
+      "4": 11,
+      "5": 4
+     },
+     "agree|thanks": {
+      "4": 1
+     },
+     "ambient|agree": {
+      "1": 5,
+      "2": 1
+     },
+     "ambient|disagree": {
+      "1": 1
+     },
+     "ambient|greeting": {
+      "1": 2,
+      "2": 2,
+      "4": 1,
+      "5": 1
+     },
+     "ambient|laughter": {
+      "1": 8
+     },
+     "ambient|other": {
+      "1": 89,
+      "2": 36,
+      "3": 20,
+      "4": 32,
+      "5": 16,
+      "6": 5,
+      "7": 2
+     },
+     "ambient|question": {
+      "1": 8,
+      "2": 4,
+      "3": 3,
+      "4": 5,
+      "5": 2,
+      "6": 3
+     },
+     "ambient|thanks": {
+      "5": 1
+     },
+     "apology|agree": {
+      "2": 1
+     },
+     "apology|disagree": {
+      "1": 1
+     },
+     "apology|goodbye": {
+      "1": 1
+     },
+     "apology|other": {
+      "1": 2,
+      "2": 5,
+      "3": 4,
+      "4": 3,
+      "5": 8,
+      "6": 2
+     },
+     "apology|question": {
+      "1": 1,
+      "2": 1
+     },
+     "disagree|agree": {
+      "1": 16
+     },
+     "disagree|disagree": {
+      "1": 6,
+      "2": 1
+     },
+     "disagree|greeting": {
+      "2": 1
+     },
+     "disagree|laughter": {
+      "1": 5,
+      "2": 1
+     },
+     "disagree|other": {
+      "1": 31,
+      "2": 19,
+      "3": 20,
+      "4": 18,
+      "5": 10,
+      "6": 2,
+      "8": 1
+     },
+     "disagree|question": {
+      "1": 5,
+      "2": 2,
+      "3": 1,
+      "4": 2
+     },
+     "emoji_only|agree": {
+      "1": 3
+     },
+     "emoji_only|disagree": {
+      "1": 1
+     },
+     "emoji_only|laughter": {
+      "1": 3
+     },
+     "emoji_only|other": {
+      "1": 9,
+      "2": 9,
+      "3": 11,
+      "4": 7,
+      "5": 11,
+      "6": 2,
+      "7": 1
+     },
+     "emoji_only|question": {
+      "1": 3,
+      "3": 1
+     },
+     "emoji_only|thanks": {
+      "2": 1
+     },
+     "goodbye|agree": {
+      "1": 3
+     },
+     "goodbye|goodbye": {
+      "1": 1,
+      "2": 2
+     },
+     "goodbye|laughter": {
+      "1": 1
+     },
+     "goodbye|other": {
+      "1": 2,
+      "2": 5,
+      "3": 3,
+      "4": 3,
+      "5": 1
+     },
+     "goodbye|question": {
+      "1": 1,
+      "2": 1,
+      "3": 1
+     },
+     "greeting|agree": {
+      "1": 4
+     },
+     "greeting|disagree": {
+      "1": 1
+     },
+     "greeting|goodbye": {
+      "1": 2,
+      "2": 2,
+      "4": 1
+     },
+     "greeting|greeting": {
+      "1": 52,
+      "2": 21,
+      "3": 9,
+      "4": 6,
+      "5": 1
+     },
+     "greeting|laughter": {
+      "1": 2
+     },
+     "greeting|other": {
+      "1": 44,
+      "2": 33,
+      "3": 17,
+      "4": 17,
+      "5": 11,
+      "6": 3
+     },
+     "greeting|question": {
+      "1": 3,
+      "3": 5,
+      "4": 2,
+      "5": 1,
+      "6": 1
+     },
+     "laughter|agree": {
+      "1": 9
+     },
+     "laughter|disagree": {
+      "1": 3,
+      "2": 1
+     },
+     "laughter|goodbye": {
+      "5": 1
+     },
+     "laughter|greeting": {
+      "1": 3,
+      "2": 1,
+      "3": 2
+     },
+     "laughter|laughter": {
+      "1": 22,
+      "2": 4
+     },
+     "laughter|other": {
+      "1": 78,
+      "2": 44,
+      "3": 27,
+      "4": 40,
+      "5": 20,
+      "6": 4,
+      "7": 1
+     },
+     "laughter|question": {
+      "1": 4,
+      "2": 3,
+      "3": 1,
+      "4": 5,
+      "5": 5,
+      "6": 1
+     },
+     "laughter|thanks": {
+      "5": 1
+     },
+     "media|agree": {
+      "1": 5
+     },
+     "media|disagree": {
+      "1": 6
+     },
+     "media|goodbye": {
+      "2": 2
+     },
+     "media|greeting": {
+      "1": 5,
+      "2": 3,
+      "3": 1,
+      "4": 1,
+      "5": 1,
+      "6": 1
+     },
+     "media|laughter": {
+      "1": 14,
+      "2": 1
+     },
+     "media|other": {
+      "1": 79,
+      "2": 69,
+      "3": 24,
+      "4": 36,
+      "5": 22,
+      "6": 3
+     },
+     "media|question": {
+      "1": 4,
+      "2": 4,
+      "3": 4,
+      "4": 3,
+      "5": 7
+     },
+     "media|thanks": {
+      "5": 1
+     },
+     "question_wh|agree": {
+      "1": 7
+     },
+     "question_wh|disagree": {
+      "1": 3
+     },
+     "question_wh|goodbye": {
+      "1": 1,
+      "2": 1
+     },
+     "question_wh|greeting": {
+      "1": 1,
+      "2": 2,
+      "3": 2,
+      "5": 1,
+      "6": 1
+     },
+     "question_wh|laughter": {
+      "1": 9,
+      "2": 1
+     },
+     "question_wh|other": {
+      "1": 117,
+      "2": 80,
+      "3": 66,
+      "4": 95,
+      "5": 45,
+      "6": 14,
+      "7": 7
+     },
+     "question_wh|question": {
+      "1": 11,
+      "2": 11,
+      "3": 4,
+      "4": 16,
+      "5": 3
+     },
+     "question_wh|thanks": {
+      "3": 1
+     },
+     "question_yn|agree": {
+      "1": 20
+     },
+     "question_yn|disagree": {
+      "1": 32,
+      "2": 1
+     },
+     "question_yn|greeting": {
+      "3": 1
+     },
+     "question_yn|laughter": {
+      "1": 11
+     },
+     "question_yn|other": {
+      "1": 77,
+      "2": 79,
+      "3": 46,
+      "4": 69,
+      "5": 42,
+      "6": 11,
+      "7": 4,
+      "8": 1
+     },
+     "question_yn|question": {
+      "1": 23,
+      "2": 11,
+      "3": 6,
+      "4": 11,
+      "5": 7,
+      "6": 2,
+      "7": 1
+     },
+     "question_yn|thanks": {
+      "2": 1,
+      "7": 1
+     },
+     "request|agree": {
+      "1": 5
+     },
+     "request|disagree": {
+      "1": 7
+     },
+     "request|goodbye": {
+      "2": 1
+     },
+     "request|greeting": {
+      "2": 2
+     },
+     "request|laughter": {
+      "1": 3,
+      "2": 1
+     },
+     "request|other": {
+      "1": 21,
+      "2": 23,
+      "3": 16,
+      "4": 24,
+      "5": 5,
+      "6": 6,
+      "7": 2
+     },
+     "request|question": {
+      "1": 5,
+      "4": 5,
+      "5": 2,
+      "6": 1
+     },
+     "statement|agree": {
+      "1": 148,
+      "2": 8
+     },
+     "statement|disagree": {
+      "1": 121,
+      "2": 2
+     },
+     "statement|goodbye": {
+      "1": 8,
+      "2": 4,
+      "5": 1
+     },
+     "statement|greeting": {
+      "1": 23,
+      "2": 22,
+      "3": 3,
+      "4": 9,
+      "5": 4,
+      "6": 3
+     },
+     "statement|laughter": {
+      "1": 213,
+      "2": 24
+     },
+     "statement|other": {
+      "1": 1323,
+      "2": 898,
+      "3": 554,
+      "4": 795,
+      "5": 481,
+      "6": 133,
+      "7": 40,
+      "8": 8
+     },
+     "statement|question": {
+      "1": 158,
+      "2": 94,
+      "3": 76,
+      "4": 107,
+      "5": 51,
+      "6": 23,
+      "7": 3,
+      "8": 2
+     },
+     "statement|thanks": {
+      "1": 5,
+      "2": 10,
+      "3": 8,
+      "4": 3,
+      "5": 5,
+      "7": 1,
+      "8": 1
+     },
+     "thanks|greeting": {
+      "4": 1
+     },
+     "thanks|laughter": {
+      "1": 1,
+      "2": 1
+     },
+     "thanks|other": {
+      "1": 3,
+      "2": 11,
+      "3": 2,
+      "4": 3,
+      "5": 4,
+      "6": 3,
+      "8": 1
+     },
+     "thanks|question": {
+      "1": 1,
+      "5": 2
+     },
+     "thanks|thanks": {
+      "1": 1,
+      "2": 1
+     }
+    },
+    "len_given_reply": {
+     "agree": {
+      "1": 245,
+      "2": 10
+     },
+     "disagree": {
+      "1": 197,
+      "2": 5
+     },
+     "goodbye": {
+      "1": 13,
+      "2": 12,
+      "4": 1,
+      "5": 2
+     },
+     "greeting": {
+      "1": 88,
+      "2": 57,
+      "3": 18,
+      "4": 18,
+      "5": 8,
+      "6": 5
+     },
+     "laughter": {
+      "1": 317,
+      "2": 33
+     },
+     "other": {
+      "1": 1941,
+      "2": 1372,
+      "3": 842,
+      "4": 1178,
+      "5": 689,
+      "6": 195,
+      "7": 57,
+      "8": 11
+     },
+     "question": {
+      "1": 237,
+      "2": 137,
+      "3": 105,
+      "4": 167,
+      "5": 84,
+      "6": 31,
+      "7": 4,
+      "8": 2
+     },
+     "thanks": {
+      "1": 6,
+      "2": 13,
+      "3": 9,
+      "4": 4,
+      "5": 8,
+      "7": 2,
+      "8": 1
+     }
+    },
+    "n": 8124,
+    "n_reply": {
+     "agree": 255,
+     "disagree": 202,
+     "goodbye": 28,
+     "greeting": 194,
+     "laughter": 350,
+     "other": 6285,
+     "question": 767,
+     "thanks": 43
+    },
+    "surf_all": {
+     "all_lower": 115,
+     "caps_word": 89,
+     "ellipsis": 15,
+     "elongated": 901,
+     "emoji": 1028,
+     "exclaim": 130,
+     "hinglish": 439,
+     "lower_start": 131,
+     "no_end_punct": 6337,
+     "question": 720,
+     "repeat_punct": 94,
+     "short": 4683
+    },
+    "surf_given_reply": {
+     "agree": {
+      "caps_word": 3,
+      "ellipsis": 1,
+      "elongated": 30,
+      "emoji": 8,
+      "exclaim": 1,
+      "hinglish": 1,
+      "no_end_punct": 231,
+      "question": 8,
+      "repeat_punct": 2,
+      "short": 255
+     },
+     "disagree": {
+      "elongated": 52,
+      "emoji": 5,
+      "exclaim": 2,
+      "hinglish": 5,
+      "no_end_punct": 190,
+      "question": 5,
+      "repeat_punct": 1,
+      "short": 202
+     },
+     "goodbye": {
+      "elongated": 2,
+      "no_end_punct": 28,
+      "short": 25
+     },
+     "greeting": {
+      "caps_word": 1,
+      "ellipsis": 1,
+      "elongated": 46,
+      "emoji": 16,
+      "exclaim": 5,
+      "no_end_punct": 165,
+      "question": 11,
+      "repeat_punct": 2,
+      "short": 145
+     },
+     "laughter": {
+      "elongated": 16,
+      "emoji": 34,
+      "no_end_punct": 312,
+      "question": 3,
+      "short": 350
+     },
+     "other": {
+      "all_lower": 109,
+      "caps_word": 75,
+      "ellipsis": 12,
+      "elongated": 726,
+      "emoji": 899,
+      "exclaim": 110,
+      "hinglish": 347,
+      "lower_start": 124,
+      "no_end_punct": 5213,
+      "question": 138,
+      "repeat_punct": 52,
+      "short": 3313
+     },
+     "question": {
+      "all_lower": 6,
+      "caps_word": 8,
+      "ellipsis": 1,
+      "elongated": 28,
+      "emoji": 51,
+      "exclaim": 6,
+      "hinglish": 84,
+      "lower_start": 7,
+      "no_end_punct": 175,
+      "question": 551,
+      "repeat_punct": 36,
+      "short": 374
+     },
+     "thanks": {
+      "caps_word": 2,
+      "elongated": 1,
+      "emoji": 15,
+      "exclaim": 6,
+      "hinglish": 2,
+      "no_end_punct": 23,
+      "question": 4,
+      "repeat_punct": 1,
+      "short": 19
+     }
+    }
+   },
+   "a2": {
+    "act_all": {
+     "agree": 131,
+     "disagree": 41,
+     "goodbye": 7,
+     "greeting": 27,
+     "laughter": 74,
+     "other": 1012,
+     "question": 129,
+     "thanks": 15
+    },
+    "act_given_trigger": {
+     "agree": {
+      "agree": 13,
+      "disagree": 2,
+      "goodbye": 1,
+      "greeting": 1,
+      "laughter": 4,
+      "other": 50,
+      "question": 5,
+      "thanks": 2
+     },
+     "ambient": {
+      "agree": 4,
+      "disagree": 4,
+      "greeting": 1,
+      "laughter": 9,
+      "other": 92,
+      "question": 11,
+      "thanks": 2
+     },
+     "apology": {
+      "other": 3
+     },
+     "disagree": {
+      "agree": 4,
+      "other": 21,
+      "question": 3
+     },
+     "emoji_only": {
+      "agree": 1,
+      "laughter": 3,
+      "other": 39,
+      "question": 2,
+      "thanks": 1
+     },
+     "goodbye": {
+      "goodbye": 1,
+      "greeting": 2,
+      "other": 1
+     },
+     "greeting": {
+      "goodbye": 2,
+      "greeting": 10,
+      "laughter": 2,
+      "other": 14,
+      "question": 2
+     },
+     "laughter": {
+      "other": 28,
+      "question": 2,
+      "thanks": 1
+     },
+     "media": {
+      "agree": 2,
+      "disagree": 1,
+      "greeting": 3,
+      "other": 28,
+      "question": 4,
+      "thanks": 1
+     },
+     "question_wh": {
+      "agree": 3,
+      "disagree": 2,
+      "greeting": 1,
+      "laughter": 3,
+      "other": 69,
+      "question": 15
+     },
+     "question_yn": {
+      "agree": 7,
+      "disagree": 5,
+      "laughter": 3,
+      "other": 41,
+      "question": 2
+     },
+     "request": {
+      "agree": 2,
+      "disagree": 1,
+      "other": 19
+     },
+     "statement": {
+      "agree": 95,
+      "disagree": 26,
+      "goodbye": 3,
+      "greeting": 9,
+      "laughter": 47,
+      "other": 598,
+      "question": 82,
+      "thanks": 7
+     },
+     "thanks": {
+      "laughter": 3,
+      "other": 9,
+      "question": 1,
+      "thanks": 1
+     }
+    },
+    "emoji": {
+     "☘": 1,
+     "☠": 2,
+     "☺": 1,
+     "⚜": 1,
+     "⛩": 1,
+     "❤": 22,
+     "🌝": 1,
+     "👍": 9,
+     "💀": 1,
+     "💐": 8,
+     "🔫": 1,
+     "🔴": 1,
+     "🖐": 1,
+     "🗿": 188,
+     "😁": 5,
+     "😂": 46,
+     "😉": 10,
+     "😎": 3,
+     "😔": 2,
+     "😭": 110,
+     "😳": 1,
+     "😶": 1,
+     "🙂": 2,
+     "🙊": 1,
+     "🙏": 1,
+     "🟡": 1,
+     "🤌": 2,
+     "🤝": 3,
+     "🧃": 1,
+     "🫣": 1
+    },
+    "kind_given_reply": {
+     "agree": {
+      "text": 131
+     },
+     "disagree": {
+      "text": 41
+     },
+     "goodbye": {
+      "text": 7
+     },
+     "greeting": {
+      "text": 27
+     },
+     "laughter": {
+      "emoji_only": 1,
+      "text": 73
+     },
+     "other": {
+      "emoji_only": 8,
+      "text": 1004
+     },
+     "question": {
+      "emoji_only": 2,
+      "text": 127
+     },
+     "thanks": {
+      "text": 15
+     }
+    },
+    "len_all": {
+     "1": 601,
+     "2": 301,
+     "3": 188,
+     "4": 195,
+     "5": 102,
+     "6": 39,
+     "7": 8,
+     "8": 2
+    },
+    "len_given_pair": {
+     "agree|agree": {
+      "1": 12,
+      "2": 1
+     },
+     "agree|disagree": {
+      "1": 2
+     },
+     "agree|goodbye": {
+      "1": 1
+     },
+     "agree|greeting": {
+      "1": 1
+     },
+     "agree|laughter": {
+      "1": 3,
+      "2": 1
+     },
+     "agree|other": {
+      "1": 15,
+      "2": 12,
+      "3": 8,
+      "4": 11,
+      "5": 2,
+      "6": 1,
+      "7": 1
+     },
+     "agree|question": {
+      "1": 2,
+      "3": 2,
+      "4": 1
+     },
+     "agree|thanks": {
+      "2": 2
+     },
+     "ambient|agree": {
+      "1": 3,
+      "2": 1
+     },
+     "ambient|disagree": {
+      "1": 4
+     },
+     "ambient|greeting": {
+      "2": 1
+     },
+     "ambient|laughter": {
+      "1": 9
+     },
+     "ambient|other": {
+      "1": 24,
+      "2": 19,
+      "3": 14,
+      "4": 20,
+      "5": 8,
+      "6": 6,
+      "7": 1
+     },
+     "ambient|question": {
+      "1": 5,
+      "3": 2,
+      "4": 2,
+      "5": 2
+     },
+     "ambient|thanks": {
+      "1": 1,
+      "7": 1
+     },
+     "apology|other": {
+      "1": 2,
+      "3": 1
+     },
+     "disagree|agree": {
+      "1": 4
+     },
+     "disagree|other": {
+      "1": 10,
+      "2": 3,
+      "3": 3,
+      "4": 2,
+      "5": 3
+     },
+     "disagree|question": {
+      "1": 2,
+      "2": 1
+     },
+     "emoji_only|agree": {
+      "1": 1
+     },
+     "emoji_only|laughter": {
+      "1": 2,
+      "2": 1
+     },
+     "emoji_only|other": {
+      "1": 14,
+      "2": 8,
+      "3": 7,
+      "4": 5,
+      "5": 3,
+      "6": 2
+     },
+     "emoji_only|question": {
+      "2": 1,
+      "5": 1
+     },
+     "emoji_only|thanks": {
+      "2": 1
+     },
+     "goodbye|goodbye": {
+      "2": 1
+     },
+     "goodbye|greeting": {
+      "1": 1,
+      "2": 1
+     },
+     "goodbye|other": {
+      "1": 1
+     },
+     "greeting|goodbye": {
+      "1": 2
+     },
+     "greeting|greeting": {
+      "1": 9,
+      "2": 1
+     },
+     "greeting|laughter": {
+      "1": 2
+     },
+     "greeting|other": {
+      "1": 13,
+      "4": 1
+     },
+     "greeting|question": {
+      "2": 1,
+      "4": 1
+     },
+     "laughter|other": {
+      "1": 5,
+      "2": 12,
+      "3": 4,
+      "4": 5,
+      "5": 2
+     },
+     "laughter|question": {
+      "1": 1,
+      "2": 1
+     },
+     "laughter|thanks": {
+      "2": 1
+     },
+     "media|agree": {
+      "1": 1,
+      "2": 1
+     },
+     "media|disagree": {
+      "1": 1
+     },
+     "media|greeting": {
+      "1": 1,
+      "2": 1,
+      "3": 1
+     },
+     "media|other": {
+      "1": 5,
+      "2": 7,
+      "3": 3,
+      "4": 8,
+      "5": 4,
+      "6": 1
+     },
+     "media|question": {
+      "1": 1,
+      "2": 3
+     },
+     "media|thanks": {
+      "2": 1
+     },
+     "question_wh|agree": {
+      "1": 1,
+      "2": 2
+     },
+     "question_wh|disagree": {
+      "1": 2
+     },
+     "question_wh|greeting": {
+      "1": 1
+     },
+     "question_wh|laughter": {
+      "1": 3
+     },
+     "question_wh|other": {
+      "1": 17,
+      "2": 16,
+      "3": 12,
+      "4": 13,
+      "5": 8,
+      "6": 2,
+      "7": 1
+     },
+     "question_wh|question": {
+      "1": 3,
+      "2": 2,
+      "3": 4,
+      "4": 3,
+      "5": 1,
+      "6": 2
+     },
+     "question_yn|agree": {
+      "1": 7
+     },
+     "question_yn|disagree": {
+      "1": 5
+     },
+     "question_yn|laughter": {
+      "1": 3
+     },
+     "question_yn|other": {
+      "1": 7,
+      "2": 12,
+      "3": 7,
+      "4": 8,
+      "5": 5,
+      "6": 2
+     },
+     "question_yn|question": {
+      "1": 1,
+      "3": 1
+     },
+     "request|agree": {
+      "1": 2
+     },
+     "request|disagree": {
+      "1": 1
+     },
+     "request|other": {
+      "1": 6,
+      "2": 4,
+      "3": 4,
+      "4": 4,
+      "5": 1
+     },
+     "statement|agree": {
+      "1": 80,
+      "2": 15
+     },
+     "statement|disagree": {
+      "1": 24,
+      "2": 2
+     },
+     "statement|goodbye": {
+      "1": 2,
+      "2": 1
+     },
+     "statement|greeting": {
+      "1": 8,
+      "5": 1
+     },
+     "statement|laughter": {
+      "1": 38,
+      "2": 9
+     },
+     "statement|other": {
+      "1": 192,
+      "2": 135,
+      "3": 96,
+      "4": 95,
+      "5": 53,
+      "6": 21,
+      "7": 4,
+      "8": 2
+     },
+     "statement|question": {
+      "1": 30,
+      "2": 16,
+      "3": 18,
+      "4": 11,
+      "5": 5,
+      "6": 2
+     },
+     "statement|thanks": {
+      "1": 2,
+      "2": 3,
+      "4": 2
+     },
+     "thanks|laughter": {
+      "1": 3
+     },
+     "thanks|other": {
+      "1": 3,
+      "2": 1,
+      "4": 3,
+      "5": 2
+     },
+     "thanks|question": {
+      "5": 1
+     },
+     "thanks|thanks": {
+      "3": 1
+     }
+    },
+    "len_given_reply": {
+     "agree": {
+      "1": 111,
+      "2": 20
+     },
+     "disagree": {
+      "1": 39,
+      "2": 2
+     },
+     "goodbye": {
+      "1": 5,
+      "2": 2
+     },
+     "greeting": {
+      "1": 21,
+      "2": 4,
+      "3": 1,
+      "5": 1
+     },
+     "laughter": {
+      "1": 63,
+      "2": 11
+     },
+     "other": {
+      "1": 314,
+      "2": 229,
+      "3": 159,
+      "4": 175,
+      "5": 91,
+      "6": 35,
+      "7": 7,
+      "8": 2
+     },
+     "question": {
+      "1": 45,
+      "2": 25,
+      "3": 27,
+      "4": 18,
+      "5": 10,
+      "6": 4
+     },
+     "thanks": {
+      "1": 3,
+      "2": 8,
+      "3": 1,
+      "4": 2,
+      "7": 1
+     }
+    },
+    "n": 1436,
+    "n_reply": {
+     "agree": 131,
+     "disagree": 41,
+     "goodbye": 7,
+     "greeting": 27,
+     "laughter": 74,
+     "other": 1012,
+     "question": 129,
+     "thanks": 15
+    },
+    "surf_all": {
+     "all_lower": 32,
+     "ellipsis": 39,
+     "elongated": 103,
+     "emoji": 351,
+     "exclaim": 9,
+     "hinglish": 320,
+     "lower_start": 34,
+     "no_end_punct": 935,
+     "question": 85,
+     "repeat_punct": 427,
+     "short": 902
+    },
+    "surf_given_reply": {
+     "agree": {
+      "ellipsis": 3,
+      "elongated": 3,
+      "emoji": 20,
+      "no_end_punct": 105,
+      "question": 3,
+      "repeat_punct": 22,
+      "short": 131
+     },
+     "disagree": {
+      "elongated": 3,
+      "emoji": 2,
+      "no_end_punct": 39,
+      "repeat_punct": 2,
+      "short": 41
+     },
+     "goodbye": {
+      "elongated": 1,
+      "no_end_punct": 7,
+      "short": 7
+     },
+     "greeting": {
+      "all_lower": 2,
+      "elongated": 5,
+      "emoji": 1,
+      "lower_start": 2,
+      "no_end_punct": 25,
+      "question": 1,
+      "repeat_punct": 1,
+      "short": 25
+     },
+     "laughter": {
+      "all_lower": 1,
+      "ellipsis": 1,
+      "elongated": 2,
+      "emoji": 11,
+      "exclaim": 1,
+      "lower_start": 1,
+      "no_end_punct": 57,
+      "question": 3,
+      "repeat_punct": 16,
+      "short": 74
+     },
+     "other": {
+      "all_lower": 27,
+      "ellipsis": 33,
+      "elongated": 87,
+      "emoji": 288,
+      "exclaim": 8,
+      "hinglish": 246,
+      "lower_start": 29,
+      "no_end_punct": 659,
+      "question": 13,
+      "repeat_punct": 346,
+      "short": 543
+     },
+     "question": {
+      "all_lower": 2,
+      "ellipsis": 2,
+      "elongated": 2,
+      "emoji": 26,
+      "hinglish": 73,
+      "lower_start": 2,
+      "no_end_punct": 32,
+      "question": 65,
+      "repeat_punct": 36,
+      "short": 70
+     },
+     "thanks": {
+      "emoji": 3,
+      "hinglish": 1,
+      "no_end_punct": 11,
+      "repeat_punct": 4,
+      "short": 11
+     }
+    }
+   }
+  },
+  "all": {
+   "act_all": {
+    "agree": 386,
+    "disagree": 243,
+    "goodbye": 35,
+    "greeting": 221,
+    "laughter": 424,
+    "other": 7297,
+    "question": 896,
+    "thanks": 58
+   },
+   "act_given_trigger": {
+    "agree": {
+     "agree": 33,
+     "disagree": 17,
+     "goodbye": 1,
+     "greeting": 6,
+     "laughter": 29,
+     "other": 265,
+     "question": 39,
+     "thanks": 3
+    },
+    "ambient": {
+     "agree": 10,
+     "disagree": 5,
+     "greeting": 7,
+     "laughter": 17,
+     "other": 292,
+     "question": 36,
+     "thanks": 3
+    },
+    "apology": {
+     "agree": 1,
+     "disagree": 1,
+     "goodbye": 1,
+     "other": 27,
+     "question": 2
+    },
+    "disagree": {
+     "agree": 20,
+     "disagree": 7,
+     "greeting": 1,
+     "laughter": 6,
+     "other": 122,
+     "question": 13
+    },
+    "emoji_only": {
+     "agree": 4,
+     "disagree": 1,
+     "laughter": 6,
+     "other": 89,
+     "question": 6,
+     "thanks": 2
+    },
+    "goodbye": {
+     "agree": 3,
+     "goodbye": 4,
+     "greeting": 2,
+     "laughter": 1,
+     "other": 15,
+     "question": 3
+    },
+    "greeting": {
+     "agree": 4,
+     "disagree": 1,
+     "goodbye": 7,
+     "greeting": 99,
+     "laughter": 4,
+     "other": 139,
+     "question": 14
+    },
+    "laughter": {
+     "agree": 9,
+     "disagree": 4,
+     "goodbye": 1,
+     "greeting": 6,
+     "laughter": 26,
+     "other": 242,
+     "question": 21,
+     "thanks": 2
+    },
+    "media": {
+     "agree": 7,
+     "disagree": 7,
+     "goodbye": 2,
+     "greeting": 15,
+     "laughter": 15,
+     "other": 261,
+     "question": 26,
+     "thanks": 2
+    },
+    "question_wh": {
+     "agree": 10,
+     "disagree": 5,
+     "goodbye": 2,
+     "greeting": 8,
+     "laughter": 13,
+     "other": 493,
+     "question": 60,
+     "thanks": 1
+    },
+    "question_yn": {
+     "agree": 27,
+     "disagree": 38,
+     "greeting": 1,
+     "laughter": 14,
+     "other": 370,
+     "question": 63,
+     "thanks": 2
+    },
+    "request": {
+     "agree": 7,
+     "disagree": 8,
+     "goodbye": 1,
+     "greeting": 2,
+     "laughter": 4,
+     "other": 116,
+     "question": 13
+    },
+    "statement": {
+     "agree": 251,
+     "disagree": 149,
+     "goodbye": 16,
+     "greeting": 73,
+     "laughter": 284,
+     "other": 4830,
+     "question": 596,
+     "thanks": 40
+    },
+    "thanks": {
+     "greeting": 1,
+     "laughter": 5,
+     "other": 36,
+     "question": 4,
+     "thanks": 3
+    }
+   },
+   "emoji": {
+    "☠": 9,
+    "✌": 8,
+    "✨": 70,
+    "❤": 25,
+    "🍓": 9,
+    "🎀": 43,
+    "🏻": 63,
+    "👍": 9,
+    "👺": 11,
+    "💀": 7,
+    "💅": 36,
+    "💌": 25,
+    "💐": 17,
+    "💔": 16,
+    "💗": 19,
+    "💟": 14,
+    "🗿": 218,
+    "😁": 6,
+    "😂": 92,
+    "😉": 11,
+    "😋": 35,
+    "😔": 80,
+    "😭": 868,
+    "🙏": 8,
+    "🤌": 8,
+    "🤨": 5,
+    "🤭": 6,
+    "🥀": 50,
+    "🪼": 8,
+    "🫵": 6
+   },
+   "kind_given_reply": {
+    "agree": {
+     "text": 386
+    },
+    "disagree": {
+     "text": 243
+    },
+    "goodbye": {
+     "text": 35
+    },
+    "greeting": {
+     "text": 221
+    },
+    "laughter": {
+     "emoji_only": 2,
+     "text": 422
+    },
+    "other": {
+     "emoji_only": 69,
+     "text": 7228
+    },
+    "question": {
+     "emoji_only": 7,
+     "text": 889
+    },
+    "thanks": {
+     "text": 58
+    }
+   },
+   "len_all": {
+    "1": 3645,
+    "2": 1940,
+    "3": 1162,
+    "4": 1563,
+    "5": 893,
+    "6": 270,
+    "7": 71,
+    "8": 16
+   },
+   "len_given_pair": {
+    "agree|agree": {
+     "1": 32,
+     "2": 1
+    },
+    "agree|disagree": {
+     "1": 17
+    },
+    "agree|goodbye": {
+     "1": 1
+    },
+    "agree|greeting": {
+     "1": 3,
+     "2": 3
+    },
+    "agree|laughter": {
+     "1": 28,
+     "2": 1
+    },
+    "agree|other": {
+     "1": 81,
+     "2": 73,
+     "3": 40,
+     "4": 47,
+     "5": 15,
+     "6": 8,
+     "7": 1
+    },
+    "agree|question": {
+     "1": 12,
+     "2": 6,
+     "3": 5,
+     "4": 12,
+     "5": 4
+    },
+    "agree|thanks": {
+     "2": 2,
+     "4": 1
+    },
+    "ambient|agree": {
+     "1": 8,
+     "2": 2
+    },
+    "ambient|disagree": {
+     "1": 5
+    },
+    "ambient|greeting": {
+     "1": 2,
+     "2": 3,
+     "4": 1,
+     "5": 1
+    },
+    "ambient|laughter": {
+     "1": 17
+    },
+    "ambient|other": {
+     "1": 113,
+     "2": 55,
+     "3": 34,
+     "4": 52,
+     "5": 24,
+     "6": 11,
+     "7": 3
+    },
+    "ambient|question": {
+     "1": 13,
+     "2": 4,
+     "3": 5,
+     "4": 7,
+     "5": 4,
+     "6": 3
+    },
+    "ambient|thanks": {
+     "1": 1,
+     "5": 1,
+     "7": 1
+    },
+    "apology|agree": {
+     "2": 1
+    },
+    "apology|disagree": {
+     "1": 1
+    },
+    "apology|goodbye": {
+     "1": 1
+    },
+    "apology|other": {
+     "1": 4,
+     "2": 5,
+     "3": 5,
+     "4": 3,
+     "5": 8,
+     "6": 2
+    },
+    "apology|question": {
+     "1": 1,
+     "2": 1
+    },
+    "disagree|agree": {
+     "1": 20
+    },
+    "disagree|disagree": {
+     "1": 6,
+     "2": 1
+    },
+    "disagree|greeting": {
+     "2": 1
+    },
+    "disagree|laughter": {
+     "1": 5,
+     "2": 1
+    },
+    "disagree|other": {
+     "1": 41,
+     "2": 22,
+     "3": 23,
+     "4": 20,
+     "5": 13,
+     "6": 2,
+     "8": 1
+    },
+    "disagree|question": {
+     "1": 7,
+     "2": 3,
+     "3": 1,
+     "4": 2
+    },
+    "emoji_only|agree": {
+     "1": 4
+    },
+    "emoji_only|disagree": {
+     "1": 1
+    },
+    "emoji_only|laughter": {
+     "1": 5,
+     "2": 1
+    },
+    "emoji_only|other": {
+     "1": 23,
+     "2": 17,
+     "3": 18,
+     "4": 12,
+     "5": 14,
+     "6": 4,
+     "7": 1
+    },
+    "emoji_only|question": {
+     "1": 3,
+     "2": 1,
+     "3": 1,
+     "5": 1
+    },
+    "emoji_only|thanks": {
+     "2": 2
+    },
+    "goodbye|agree": {
+     "1": 3
+    },
+    "goodbye|goodbye": {
+     "1": 1,
+     "2": 3
+    },
+    "goodbye|greeting": {
+     "1": 1,
+     "2": 1
+    },
+    "goodbye|laughter": {
+     "1": 1
+    },
+    "goodbye|other": {
+     "1": 3,
+     "2": 5,
+     "3": 3,
+     "4": 3,
+     "5": 1
+    },
+    "goodbye|question": {
+     "1": 1,
+     "2": 1,
+     "3": 1
+    },
+    "greeting|agree": {
+     "1": 4
+    },
+    "greeting|disagree": {
+     "1": 1
+    },
+    "greeting|goodbye": {
+     "1": 4,
+     "2": 2,
+     "4": 1
+    },
+    "greeting|greeting": {
+     "1": 61,
+     "2": 22,
+     "3": 9,
+     "4": 6,
+     "5": 1
+    },
+    "greeting|laughter": {
+     "1": 4
+    },
+    "greeting|other": {
+     "1": 57,
+     "2": 33,
+     "3": 17,
+     "4": 18,
+     "5": 11,
+     "6": 3
+    },
+    "greeting|question": {
+     "1": 3,
+     "2": 1,
+     "3": 5,
+     "4": 3,
+     "5": 1,
+     "6": 1
+    },
+    "laughter|agree": {
+     "1": 9
+    },
+    "laughter|disagree": {
+     "1": 3,
+     "2": 1
+    },
+    "laughter|goodbye": {
+     "5": 1
+    },
+    "laughter|greeting": {
+     "1": 3,
+     "2": 1,
+     "3": 2
+    },
+    "laughter|laughter": {
+     "1": 22,
+     "2": 4
+    },
+    "laughter|other": {
+     "1": 83,
+     "2": 56,
+     "3": 31,
+     "4": 45,
+     "5": 22,
+     "6": 4,
+     "7": 1
+    },
+    "laughter|question": {
+     "1": 5,
+     "2": 4,
+     "3": 1,
+     "4": 5,
+     "5": 5,
+     "6": 1
+    },
+    "laughter|thanks": {
+     "2": 1,
+     "5": 1
+    },
+    "media|agree": {
+     "1": 6,
+     "2": 1
+    },
+    "media|disagree": {
+     "1": 7
+    },
+    "media|goodbye": {
+     "2": 2
+    },
+    "media|greeting": {
+     "1": 6,
+     "2": 4,
+     "3": 2,
+     "4": 1,
+     "5": 1,
+     "6": 1
+    },
+    "media|laughter": {
+     "1": 14,
+     "2": 1
+    },
+    "media|other": {
+     "1": 84,
+     "2": 76,
+     "3": 27,
+     "4": 44,
+     "5": 26,
+     "6": 4
+    },
+    "media|question": {
+     "1": 5,
+     "2": 7,
+     "3": 4,
+     "4": 3,
+     "5": 7
+    },
+    "media|thanks": {
+     "2": 1,
+     "5": 1
+    },
+    "question_wh|agree": {
+     "1": 8,
+     "2": 2
+    },
+    "question_wh|disagree": {
+     "1": 5
+    },
+    "question_wh|goodbye": {
+     "1": 1,
+     "2": 1
+    },
+    "question_wh|greeting": {
+     "1": 2,
+     "2": 2,
+     "3": 2,
+     "5": 1,
+     "6": 1
+    },
+    "question_wh|laughter": {
+     "1": 12,
+     "2": 1
+    },
+    "question_wh|other": {
+     "1": 134,
+     "2": 96,
+     "3": 78,
+     "4": 108,
+     "5": 53,
+     "6": 16,
+     "7": 8
+    },
+    "question_wh|question": {
+     "1": 14,
+     "2": 13,
+     "3": 8,
+     "4": 19,
+     "5": 4,
+     "6": 2
+    },
+    "question_wh|thanks": {
+     "3": 1
+    },
+    "question_yn|agree": {
+     "1": 27
+    },
+    "question_yn|disagree": {
+     "1": 37,
+     "2": 1
+    },
+    "question_yn|greeting": {
+     "3": 1
+    },
+    "question_yn|laughter": {
+     "1": 14
+    },
+    "question_yn|other": {
+     "1": 84,
+     "2": 91,
+     "3": 53,
+     "4": 77,
+     "5": 47,
+     "6": 13,
+     "7": 4,
+     "8": 1
+    },
+    "question_yn|question": {
+     "1": 24,
+     "2": 11,
+     "3": 7,
+     "4": 11,
+     "5": 7,
+     "6": 2,
+     "7": 1
+    },
+    "question_yn|thanks": {
+     "2": 1,
+     "7": 1
+    },
+    "request|agree": {
+     "1": 7
+    },
+    "request|disagree": {
+     "1": 8
+    },
+    "request|goodbye": {
+     "2": 1
+    },
+    "request|greeting": {
+     "2": 2
+    },
+    "request|laughter": {
+     "1": 3,
+     "2": 1
+    },
+    "request|other": {
+     "1": 27,
+     "2": 27,
+     "3": 20,
+     "4": 28,
+     "5": 6,
+     "6": 6,
+     "7": 2
+    },
+    "request|question": {
+     "1": 5,
+     "4": 5,
+     "5": 2,
+     "6": 1
+    },
+    "statement|agree": {
+     "1": 228,
+     "2": 23
+    },
+    "statement|disagree": {
+     "1": 145,
+     "2": 4
+    },
+    "statement|goodbye": {
+     "1": 10,
+     "2": 5,
+     "5": 1
+    },
+    "statement|greeting": {
+     "1": 31,
+     "2": 22,
+     "3": 3,
+     "4": 9,
+     "5": 5,
+     "6": 3
+    },
+    "statement|laughter": {
+     "1": 251,
+     "2": 33
+    },
+    "statement|other": {
+     "1": 1515,
+     "2": 1033,
+     "3": 650,
+     "4": 890,
+     "5": 534,
+     "6": 154,
+     "7": 44,
+     "8": 10
+    },
+    "statement|question": {
+     "1": 188,
+     "2": 110,
+     "3": 94,
+     "4": 118,
+     "5": 56,
+     "6": 25,
+     "7": 3,
+     "8": 2
+    },
+    "statement|thanks": {
+     "1": 7,
+     "2": 13,
+     "3": 8,
+     "4": 5,
+     "5": 5,
+     "7": 1,
+     "8": 1
+    },
+    "thanks|greeting": {
+     "4": 1
+    },
+    "thanks|laughter": {
+     "1": 4,
+     "2": 1
+    },
+    "thanks|other": {
+     "1": 6,
+     "2": 12,
+     "3": 2,
+     "4": 6,
+     "5": 6,
+     "6": 3,
+     "8": 1
+    },
+    "thanks|question": {
+     "1": 1,
+     "5": 3
+    },
+    "thanks|thanks": {
+     "1": 1,
+     "2": 1,
+     "3": 1
+    }
+   },
+   "len_given_reply": {
+    "agree": {
+     "1": 356,
+     "2": 30
+    },
+    "disagree": {
+     "1": 236,
+     "2": 7
+    },
+    "goodbye": {
+     "1": 18,
+     "2": 14,
+     "4": 1,
+     "5": 2
+    },
+    "greeting": {
+     "1": 109,
+     "2": 61,
+     "3": 19,
+     "4": 18,
+     "5": 9,
+     "6": 5
+    },
+    "laughter": {
+     "1": 380,
+     "2": 44
+    },
+    "other": {
+     "1": 2255,
+     "2": 1601,
+     "3": 1001,
+     "4": 1353,
+     "5": 780,
+     "6": 230,
+     "7": 64,
+     "8": 13
+    },
+    "question": {
+     "1": 282,
+     "2": 162,
+     "3": 132,
+     "4": 185,
+     "5": 94,
+     "6": 35,
+     "7": 4,
+     "8": 2
+    },
+    "thanks": {
+     "1": 9,
+     "2": 21,
+     "3": 10,
+     "4": 6,
+     "5": 8,
+     "7": 3,
+     "8": 1
+    }
+   },
+   "n": 9560,
+   "n_reply": {
+    "agree": 386,
+    "disagree": 243,
+    "goodbye": 35,
+    "greeting": 221,
+    "laughter": 424,
+    "other": 7297,
+    "question": 896,
+    "thanks": 58
+   },
+   "surf_all": {
+    "all_lower": 147,
+    "caps_word": 89,
+    "ellipsis": 54,
+    "elongated": 1004,
+    "emoji": 1379,
+    "exclaim": 139,
+    "hinglish": 759,
+    "lower_start": 165,
+    "no_end_punct": 7272,
+    "question": 805,
+    "repeat_punct": 521,
+    "short": 5585
+   },
+   "surf_given_reply": {
+    "agree": {
+     "caps_word": 3,
+     "ellipsis": 4,
+     "elongated": 33,
+     "emoji": 28,
+     "exclaim": 1,
+     "hinglish": 1,
+     "no_end_punct": 336,
+     "question": 11,
+     "repeat_punct": 24,
+     "short": 386
+    },
+    "disagree": {
+     "elongated": 55,
+     "emoji": 7,
+     "exclaim": 2,
+     "hinglish": 5,
+     "no_end_punct": 229,
+     "question": 5,
+     "repeat_punct": 3,
+     "short": 243
+    },
+    "goodbye": {
+     "elongated": 3,
+     "no_end_punct": 35,
+     "short": 32
+    },
+    "greeting": {
+     "all_lower": 2,
+     "caps_word": 1,
+     "ellipsis": 1,
+     "elongated": 51,
+     "emoji": 17,
+     "exclaim": 5,
+     "lower_start": 2,
+     "no_end_punct": 190,
+     "question": 12,
+     "repeat_punct": 3,
+     "short": 170
+    },
+    "laughter": {
+     "all_lower": 1,
+     "ellipsis": 1,
+     "elongated": 18,
+     "emoji": 45,
+     "exclaim": 1,
+     "lower_start": 1,
+     "no_end_punct": 369,
+     "question": 6,
+     "repeat_punct": 16,
+     "short": 424
+    },
+    "other": {
+     "all_lower": 136,
+     "caps_word": 75,
+     "ellipsis": 45,
+     "elongated": 813,
+     "emoji": 1187,
+     "exclaim": 118,
+     "hinglish": 593,
+     "lower_start": 153,
+     "no_end_punct": 5872,
+     "question": 151,
+     "repeat_punct": 398,
+     "short": 3856
+    },
+    "question": {
+     "all_lower": 8,
+     "caps_word": 8,
+     "ellipsis": 3,
+     "elongated": 30,
+     "emoji": 77,
+     "exclaim": 6,
+     "hinglish": 157,
+     "lower_start": 9,
+     "no_end_punct": 207,
+     "question": 616,
+     "repeat_punct": 72,
+     "short": 444
+    },
+    "thanks": {
+     "caps_word": 2,
+     "elongated": 1,
+     "emoji": 18,
+     "exclaim": 6,
+     "hinglish": 3,
+     "no_end_punct": 34,
+     "question": 4,
+     "repeat_punct": 5,
+     "short": 30
+    }
+   }
+  },
+  "chats": {
+   "370536b1": {
+    "k": {
+     "elongated": 321,
+     "emoji": 329,
+     "exclaim": 51,
+     "hinglish": 111,
+     "lower_start": 51,
+     "no_end_punct": 2089,
+     "question": 247,
+     "short": 1432
+    },
+    "n": 2652
+   },
+   "3fb2eae7": {
+    "k": {
+     "elongated": 31,
+     "emoji": 39,
+     "exclaim": 3,
+     "hinglish": 28,
+     "lower_start": 7,
+     "no_end_punct": 308,
+     "question": 51,
+     "short": 258
+    },
+    "n": 410
+   },
+   "4aa3ed1a": {
+    "k": {
+     "elongated": 64,
+     "emoji": 71,
+     "exclaim": 7,
+     "hinglish": 25,
+     "lower_start": 9,
+     "no_end_punct": 495,
+     "question": 38,
+     "short": 426
+    },
+    "n": 615
+   },
+   "7b640f24": {
+    "k": {
+     "elongated": 117,
+     "emoji": 378,
+     "exclaim": 9,
+     "hinglish": 355,
+     "lower_start": 35,
+     "no_end_punct": 1092,
+     "question": 105,
+     "short": 1003
+    },
+    "n": 1643
+   },
+   "be5d006c": {
+    "k": {
+     "elongated": 326,
+     "emoji": 415,
+     "exclaim": 46,
+     "hinglish": 133,
+     "lower_start": 39,
+     "no_end_punct": 2200,
+     "question": 242,
+     "short": 1599
+    },
+    "n": 2861
+   },
+   "d742f805": {
+    "k": {
+     "elongated": 99,
+     "emoji": 94,
+     "exclaim": 17,
+     "hinglish": 63,
+     "lower_start": 22,
+     "no_end_punct": 750,
+     "question": 93,
+     "short": 553
+    },
+    "n": 951
+   },
+   "ffa73c29": {
+    "k": {
+     "elongated": 33,
+     "emoji": 42,
+     "exclaim": 6,
+     "hinglish": 33,
+     "lower_start": 2,
+     "no_end_punct": 235,
+     "question": 18,
+     "short": 224
+    },
+    "n": 300
+   }
+  }
+ }
+}

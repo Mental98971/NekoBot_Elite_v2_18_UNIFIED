@@ -1,0 +1,37 @@
+{
+  "_comment": "Promotion gates. Calibrated against the measured baselines on the real held-out splits (docs/FINE_TUNING.md, 'Measured baselines'): distribution metrics (length / char-3gram / surface features) must beat the v2.9-style retrieval replay and the untuned base model; token-F1 must beat a context-blind system that has perfect style (shuffled), which shows the model actually uses the conversation. unigram_js is not gated: it is dominated by long-tail sampling noise (see noise_floor in the report). Re-calibrate after the first measured run and keep the file versioned with the adapter.",
+  "subset": "novel",
+  "min_coverage": 0.98,
+  "max_exact_copy_long": 0.05,
+  "min_long_replies": 20,
+  "max_ngram_overlap": 0.35,
+  "max_abusive": 0.0,
+  "max_contact_data": 0.0,
+  "max_placeholder": 0.0,
+  "min_own_share_vs_reference": 0.9,
+  "must_beat": {
+    "retrieval": {
+      "metrics": [
+        "length_js",
+        "char3_js",
+        "feature_gap",
+        "token_f1_mean"
+      ],
+      "at_least": 3
+    },
+    "base": {
+      "metrics": [
+        "char3_js",
+        "feature_gap",
+        "token_f1_mean"
+      ],
+      "at_least": 3
+    },
+    "shuffled": {
+      "metrics": [
+        "token_f1_mean"
+      ],
+      "at_least": 1
+    }
+  }
+}

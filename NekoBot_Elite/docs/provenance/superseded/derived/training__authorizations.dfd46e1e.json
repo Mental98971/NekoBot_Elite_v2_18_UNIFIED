@@ -1,0 +1,20 @@
+{
+  "_comment": "Weight training bakes a person's messages into model weights, and weights cannot forget one person later. training/train_lora.py therefore refuses unless the person's record here says status=granted, scope includes weights_training, and granted_by / evidence / date are filled in. Only edit a record after the PERSON THEMSELVES has agreed (evidence: where that agreement can be checked, e.g. a dated message link or note). Revoking: run python -m training.revoke --person <id>.",
+  "schema": 1,
+  "persons": {
+    "tanvi": {
+      "status": "pending",
+      "scope": [],
+      "granted_by": "",
+      "evidence": "",
+      "date": ""
+    },
+    "yashmeet": {
+      "status": "pending",
+      "scope": [],
+      "granted_by": "",
+      "evidence": "",
+      "date": ""
+    }
+  }
+}

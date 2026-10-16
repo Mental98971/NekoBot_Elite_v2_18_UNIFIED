@@ -1,0 +1,10 @@
+# Training / generation box only - NOT needed by the bot or its Docker image.
+# Pin exact versions in your own environment after the first successful run (the run records them in
+# persona_adapter.json -> environment).
+torch>=2.2
+transformers>=4.44
+peft>=0.12
+accelerate>=0.33
+safetensors>=0.4
+# QLoRA (method=qlora) additionally needs:
+# bitsandbytes>=0.43

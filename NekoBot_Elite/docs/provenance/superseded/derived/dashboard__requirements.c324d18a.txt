@@ -1,0 +1,14 @@
+# Lightweight on purpose — the dashboard only imports bot.config and
+# bot.core.database (settings + ORM models), never bot.core.bot or
+# bot.plugins, so it doesn't need python-telegram-bot/pyrogram/pytgcalls
+# at all. Keep this list in sync with what those two modules actually
+# import if you extend either one.
+fastapi>=0.110.0
+uvicorn[standard]>=0.29.0
+sqlalchemy[asyncio]>=2.0.0
+aiosqlite>=0.20.0
+asyncpg>=0.29.0
+pydantic>=2.8.0
+pydantic-settings>=2.3.0
+python-dotenv>=1.0.0
+structlog>=24.4.0

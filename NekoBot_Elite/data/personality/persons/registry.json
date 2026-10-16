@@ -1,0 +1,132 @@
+{
+  "schema": 1,
+  "_comment": "Authoritative person -> account map. Identity resolution uses ONLY numeric account ids and usernames from this file. Display names are informational (shown in /pwho, accepted as /cpersonality aliases) and are never used to infer who a Telegram user is.",
+  "persons": {
+    "tanvi": {
+      "real_name": "Tanvi",
+      "skin": "tanvi",
+      "aliases": [
+        "tanvi",
+        "iziiee"
+      ],
+      "accounts": [
+        {
+          "id": 7883544685,
+          "username": "You_are_mine_143",
+          "display_names": [
+            "Iziiee",
+            "Iziiee⋆𐙚"
+          ],
+          "variant_skin": "tanvi_iziiee",
+          "evidence": [
+            "user_declared",
+            "dataset_id_username_name"
+          ]
+        },
+        {
+          "id": 7187486402,
+          "username": "ichiiren",
+          "display_names": [
+            "ichiiren"
+          ],
+          "variant_skin": "tanvi_ichiiren",
+          "evidence": [
+            "user_declared",
+            "dataset_id_only"
+          ]
+        }
+      ]
+    },
+    "yashmeet": {
+      "real_name": "Yashmeet",
+      "skin": "yashmeet",
+      "aliases": [
+        "yashmeet",
+        "galaxy_anhilator",
+        "galaxy_annihilator",
+        "galaxy_anhilator_persona"
+      ],
+      "accounts": [
+        {
+          "id": 5553376334,
+          "username": "concyclicity",
+          "display_names": [
+            "GALAXY ANHILATOR",
+            "GALAXY ANNIHILATOR"
+          ],
+          "variant_skin": null,
+          "evidence": [
+            "user_declared",
+            "dataset_id_username_fullname"
+          ]
+        }
+      ]
+    },
+    "sonal": {
+      "real_name": "Sonal",
+      "skin": "sonal",
+      "aliases": [
+        "sonal",
+        "imseop"
+      ],
+      "accounts": [
+        {
+          "id": 5190868757,
+          "username": "FromPlanet_007897814",
+          "display_names": [
+            "𝐼𝓂𝓈𝑒𝑜𝓅 ;",
+            "𝐼𝓂𝓈𝑒𝑜𝓅"
+          ],
+          "variant_skin": null,
+          "evidence": [
+            "user_declared",
+            "dataset_id_username_fullname"
+          ]
+        }
+      ]
+    }
+  },
+  "replay_filter": {
+    "_comment": "Tokens that are never emitted as a canned reply or used as a few-shot exemplar. They remain counted in the statistics (profile.json) because they are part of how the person actually writes; this only keeps verbatim replay platform-safe.",
+    "abusive_tokens": [
+      "bc",
+      "mc",
+      "bkl",
+      "bsdk",
+      "bhosdike",
+      "bhosdika",
+      "chutiya",
+      "chutiye",
+      "chut",
+      "madarchod",
+      "behenchod",
+      "bhenchod",
+      "gandu",
+      "gaand",
+      "lund",
+      "loda",
+      "lauda",
+      "randi",
+      "harami",
+      "fuck",
+      "fucking",
+      "fck",
+      "fuk",
+      "shit",
+      "bitch",
+      "bastard",
+      "asshole",
+      "dick",
+      "pussy",
+      "slut",
+      "whore",
+      "nigga",
+      "nigger",
+      "rape",
+      "raped",
+      "kys",
+      "retard",
+      "retarded"
+    ]
+  }
+}

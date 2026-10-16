@@ -1,0 +1,60 @@
+version: "3.9"
+
+# Minimal setup: the bot alone, using the default SQLite database — no
+# other services required. Uncomment the postgres/redis block below (and
+# set DATABASE_URL / REDIS_URL in .env to match) if you want to scale up.
+
+services:
+  bot:
+    build: .
+    restart: unless-stopped
+    env_file: .env
+    volumes:
+      - ./data:/app/data
+      - ./sessions:/app/sessions
+
+  # Read-only status dashboard — see dashboard/main.py. Shares the same
+  # .env as the bot (it needs DATABASE_URL; BOT_TOKEN/OWNER_ID are
+  # required by bot.config.Settings even though the dashboard itself
+  # never uses them — see that file's docstring). No auth built in;
+  # bind to localhost or put it behind a reverse proxy for anything
+  # beyond local use: swap "8080:8080" for "127.0.0.1:8080:8080".
+  dashboard:
+    build:
+      context: .
+      dockerfile: dashboard/Dockerfile
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./data:/app/data
+    depends_on:
+      - bot
+
+  # postgres:
+  #   image: postgres:16-alpine
+  #   restart: unless-stopped
+  #   environment:
+  #     POSTGRES_USER: novabot
+  #     POSTGRES_PASSWORD: change_me
+  #     POSTGRES_DB: novabot
+  #   volumes:
+  #     - pg_data:/var/lib/postgresql/data
+  #
+  # redis:
+  #   image: redis:7-alpine
+  #   restart: unless-stopped
+  #   command: redis-server --appendonly yes
+  #   volumes:
+  #     - redis_data:/data
+  #
+  # volumes:
+  #   pg_data:
+  #   redis_data:
+
+# NOTE: the original nova_guard_bot's docker-compose.yml also defined a
+# `dashboard` service built from `dashboard/Dockerfile` — that directory
+# wasn't present anywhere in the uploaded project, so `docker-compose up`
+# would have failed on a missing build context. It's a real, working
+# read-only service now (see dashboard/main.py), added back above.

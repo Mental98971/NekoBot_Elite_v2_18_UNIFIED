@@ -1,0 +1,41 @@
+# Secrets and runtime state must never end up inside an image layer.
+# (docker-compose injects .env at runtime via `env_file:`, and mounts
+# ./data and ./sessions as volumes.)
+.env
+.env.*
+!.env.example
+sessions/
+*.session
+*.session-journal
+*.pkl
+*.db
+*.sqlite3
+data/downloads/
+
+# Not needed at runtime
+.git/
+.github/
+.gitignore
+.pytest_cache/
+.ruff_cache/
+__pycache__/
+*.pyc
+.venv/
+venv/
+tests/
+docs/
+*.md
+!README.md
+
+# Bulk importer inputs / source material, not read at runtime (see data/personality/README.md)
+data/personality/packs/
+data/personality/expansions/
+data/personality/character_styles/
+
+# Private persona-training data and adapter weights stay out of the image (adapters are served by a separate inference server).
+training/_private/
+data/models/
+training/authorizations.local.json
+
+# Persona-engine runtime memory (facts chat admins asked the bot to remember)
+data/persona_engine/

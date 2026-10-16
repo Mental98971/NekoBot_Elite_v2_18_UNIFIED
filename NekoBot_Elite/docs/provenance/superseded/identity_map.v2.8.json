@@ -1,0 +1,48 @@
+{
+  "version": "1.0",
+  "description": "Known person → account identity resolution for real-person personas. Deterministic mapping used by memory, recognition, and persona selection.",
+  "persons": [
+    {
+      "person_id": "tanvi",
+      "real_name": "Tanvi",
+      "persona_preset": "tanvi",
+      "aliases": ["iziiee", "you_are_mine_143", "ichiiren", "iziie"],
+      "accounts": [
+        {
+          "telegram_user_id": 7883544685,
+          "username": "You_are_mine_143",
+          "display_names": ["Iziiee⋆𐙚", "Iziiee"],
+          "primary": true
+        },
+        {
+          "telegram_user_id": 7187486402,
+          "username": "ichiiren",
+          "display_names": ["ichiiren"],
+          "primary": false
+        }
+      ],
+      "notes": "Same person with two accounts. All conversation history from both accounts maps to the single Tanvi persona profile."
+    },
+    {
+      "person_id": "yashmeet",
+      "real_name": "Yashmeet",
+      "persona_preset": "yashmeet",
+      "aliases": ["galaxy anhilator", "concyclicity", "galaxy annihilator", "galaxy"],
+      "accounts": [
+        {
+          "telegram_user_id": 5553376334,
+          "username": "concyclicity",
+          "display_names": ["GALAXY ANHILATOR", "GALAXY ANNIHILATOR"],
+          "primary": true
+        }
+      ],
+      "notes": "Single known account. All history maps to the Yashmeet persona profile."
+    }
+  ],
+  "resolution_rules": {
+    "match_priority": ["telegram_user_id", "username", "display_name_exact", "alias"],
+    "case_insensitive_username": true,
+    "case_insensitive_alias": true,
+    "fallback": "no_match"
+  }
+}
