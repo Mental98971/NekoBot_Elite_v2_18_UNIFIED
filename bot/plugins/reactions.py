@@ -177,6 +177,29 @@ async def _fetch_reaction_url(action: str) -> str | None:
     return None
 
 
+@safe_handler
+async def reactions_toggle_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    message = update.effective_message
+    chat_obj = update.effective_chat
+    if not message or not chat_obj:
+        return
+
+    arg = context.args[0].lower() if context.args else None
+    if arg not in ("on", "off"):
+        await message.reply_text("Usage: /reactions on | off")
+        return
+
+    async with async_session() as session:
+        chat = await session.get(Chat, chat_obj.id)
+        if not chat:
+            chat = Chat(id=chat_obj.id, title=chat_obj.title, type=chat_obj.type)
+            session.add(chat)
+        chat.reactions_enabled = arg == "on"
+        await session.commit()
+
+    await message.reply_text(f"Reaction GIFs {'enabled ✅' if arg == 'on' else 'disabled ❌'}.")
+
+
 async def _reactions_enabled(chat_id: int) -> bool:
     async with async_session() as session:
         chat = await session.get(Chat, chat_id)
