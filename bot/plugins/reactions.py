@@ -29,7 +29,6 @@ from bot.core.errors import safe_handler
 from bot.utils.anime_media import fetch_anime_media
 from bot.utils.helpers import mention_html, resolve_target_user
 from bot.utils.logger import get_logger
-from bot.utils.character_media import MIN_QUERY, clean_query, looks_like_user_reference, send_character_media
 from bot.utils.ratelimit import hit
 from bot.utils.reaction_catalog import (  # noqa: F401  (re-exported for callers and tests)
     ACTION_FALLBACKS,
@@ -112,19 +111,6 @@ async def reactions_toggle_cmd(update: Update, context: ContextTypes.DEFAULT_TYP
     await message.reply_text(f"Reaction GIFs {'enabled ✅' if arg == 'on' else 'disabled ❌'}.")
 
 
-def _character_query(message, raw_text: str) -> str:
-    """Free text after the command that names a character/series; '' when it names a Telegram user (or is too short)."""
-    if message.reply_to_message:
-        return ""
-    entities = list(message.entities or ()) + list(getattr(message, "caption_entities", None) or ())
-    if any(getattr(e, "type", "") in ("mention", "text_mention") for e in entities):
-        return ""
-    query = clean_query(" ".join(raw_text.split()[1:]))
-    if len(query) < MIN_QUERY or looks_like_user_reference(query):
-        return ""
-    return query
-
-
 @safe_handler
 async def reaction_action_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     """Send the reaction image/GIF for the command that was used (captioned when someone is targeted)."""
@@ -149,17 +135,11 @@ async def reaction_action_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE
         return
 
     action = _COMMAND_ALIASES.get(command, command)
-    # A reply, @mention or user id always means "target that person". Only free text such as ``/hug Gojo Satoru``
-    # is treated as a character/franchise lookup, and only when nobody was targeted; a miss falls through to the
-    # normal random reaction.
-    target_id, target_name = await resolve_target_user(update, context)
-    query = _character_query(message, raw_text) if target_id is None else ""
-    if query and await send_character_media(message, query, status=False):
-        return
     url = await _fetch_reaction_url(action)
     if not url:
         await message.reply_text("😿 I couldn't find a reaction image right now. Please try again shortly.")
         return
+    target_id, target_name = await resolve_target_user(update, context)
     caption = _build_caption(action, actor.first_name, actor.id, target_name, target_id)
     try:
         await _send_media(message, url, caption)
